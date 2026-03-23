@@ -1,16 +1,112 @@
-## Hi there 👋
+<h1 align="center">Hi 👋, I'm Avinash Pandey</h1>
+<h3 align="center">🚀 AI Developer | iOS Developer | Flutter Developer | Future ML Engineer</h3>
 
-<!--
-**avinash9354/avinash9354** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?lines=AI+%26+ML+Enthusiast;Full+Stack+App+Developer;SwiftUI+%7C+Flutter+Expert;Building+Next+Gen+AI+Apps;Always+Learning+New+Tech&center=true&width=500&height=50">
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🌟 About Me
+- 🔭 I’m currently building **AI-powered apps (iOS + Flutter + Web)**
+- 🤖 Passionate about **Artificial Intelligence & Machine Learning**
+- 📱 Created **Flight Booking iOS App using Swift**
+- 🧠 Working on **ChatGPT-style AI App with SwiftUI**
+- 🎨 Building **AI Photo Editing App (Offline AI Processing)**
+- 📚 Learning **Advanced AI/ML + Neural Networks**
+- 🚀 Goal: Become a **Top AI Engineer + Innovator**
+- 💬 Ask me about **AI, Apps, SwiftUI, Flutter, ML**
+- ⚡ Fun fact: *I love creating things that don't exist yet*
+
+---
+
+## 🚀 Tech Stack
+
+### 👨‍💻 Programming Languages
+- 🟢 C / C++
+- 🔵 Dart
+- 🟠 Swift
+- 🟡 Python (AI/ML)
+
+### 📱 App Development
+- 🍏 iOS Development (Swift, SwiftUI)
+- 📱 Flutter (Android + iOS + Web)
+- 🔥 Firebase Integration
+
+### 🤖 AI / ML
+- Machine Learning Basics → Advanced
+- Neural Networks (Connectionist Learning)
+- AI App Integration
+- Image Processing AI
+
+### 🛠 Tools & Technologies
+- Git & GitHub
+- Android Studio
+- Xcode
+- VS Code
+
+---
+
+## 💼 Projects
+
+### ✈️ Flight Booking App (iOS)
+- Swift-based modern UI
+- Real-time booking interface
+- Clean UX design
+
+### 🤖 ChatGPT-style AI App
+- Built using SwiftUI
+- Real-time AI chat system
+- Clean and responsive UI
+
+### 🎨 AI Photo Editing App
+- AI Enhance (Sharpen, Denoise, Restore)
+- Offline Processing
+- Cross-platform (Flutter)
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=avinash9354&show_icons=true&theme=radical" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=avinash9354&theme=radical" />
+</p>
+
+---
+
+## 🧠 Currently Learning
+- Advanced Machine Learning
+- Deep Learning
+- AI Model Optimization
+- Real-time AI Systems
+
+---
+
+## 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://www.instagram.com/mr.avi_pandey/">
+    <img src="https://img.shields.io/badge/Instagram-Follow-red?style=for-the-badge&logo=instagram"/>
+  </a>
+  <a href="https://www.linkedin.com/in/avinashpandeyai/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="https://github.com/avinash9354">
+    <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github"/>
+  </a>
+</p>
+
+---
+
+## 🔥 Quote
+
+> "I don't just use technology, I build it to change the future."
+
+---
+
+## ⚡ Profile Views
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=avinash9354&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+</p>
