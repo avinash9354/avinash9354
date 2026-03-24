@@ -4,7 +4,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Avinash%20Pandey&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=AI%20Developer%20%7C%20iOS%20%7C%20Flutter%20%7C%20Future%20ML%20Engineer&descAlignY=58&descColor=a78bfa&animation=fadeIn"/>
 
 <!-- TYPING ANIMATION -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=A78BFA&background=00000000&center=true&vCenter=true&multiline=false&width=600&height=50&lines=🤖+Building+Next-Gen+AI+Apps;📱+SwiftUI+%7C+Flutter+Expert;🧠+Deep+Learning+Explorer;🚀+Turning+Ideas+Into+Reality;⚡+Code+%2B+AI+%3D+Magic" alt="Typing SVG" />
+<img src="https://postimg.cc/MnpNLYRLfont=Fira+Code&weight=700&size=22&pause=1000&color=A78BFA&background=00000000&center=true&vCenter=true&multiline=false&width=600&height=50&lines=🤖+Building+Next-Gen+AI+Apps;📱+SwiftUI+%7C+Flutter+Expert;🧠+Deep+Learning+Explorer;🚀+Turning+Ideas+Into+Reality;⚡+Code+%2B+AI+%3D+Magic" alt="Typing SVG" />
 
 <br/>
 
