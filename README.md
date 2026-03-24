@@ -110,3 +110,63 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=avinash9354&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
 </p>
+
+
+
+
+
+---
+
+## 🤖 AI Projects Showcase
+
+| Project | Description | Tech |
+|--------|------------|------|
+| 🤖 ChatGPT AI App | Real-time AI chat app | SwiftUI |
+| 🎨 AI Photo Editor | Enhance, Denoise, Restore | Flutter + AI |
+| ✈️ Flight Booking App | Modern UI booking system | Swift |
+
+---
+
+## 📊 GitHub Stats (Neon Theme)
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=avinash9354&show_icons=true&theme=tokyonight&hide_border=true"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=avinash9354&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+## 🐍 Contribution Snake Animation
+
+<p align="center">
+  <img src="https://github.com/avinash9354/avinash9354/blob/output/github-contribution-grid-snake.svg" />
+</p>
+
+---
+
+## 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://www.instagram.com/mr.avi_pandey/">
+    <img src="https://img.shields.io/badge/Instagram-0f2027?style=for-the-badge&logo=instagram&logoColor=00ffff"/>
+  </a>
+  <a href="https://www.linkedin.com/in/avinashpandeyai/">
+    <img src="https://img.shields.io/badge/LinkedIn-0f2027?style=for-the-badge&logo=linkedin&logoColor=00ffff"/>
+  </a>
+  <a href="https://github.com/avinash9354">
+    <img src="https://img.shields.io/badge/GitHub-0f2027?style=for-the-badge&logo=github&logoColor=00ffff"/>
+  </a>
+</p>
+
+---
+
+## ⚡ Quote
+
+> ⚡ "I build AI systems that turn imagination into reality."
+
+---
+
+<!-- FOOTER -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c9ff,100:2c5364&height=120&section=footer"/>
+</p>
