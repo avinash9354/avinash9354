@@ -1,528 +1,522 @@
 from pathlib import Path
 
-p = Path("/mnt/data/README.md")
+readme = r'''<div align="center">
 
-sections = []
+<!-- ============================================================= -->
+<!--                     AVINASH PANDEY                            -->
+<!--              CINEMATIC AI ENGINEERING PROFILE                 -->
+<!-- ============================================================= -->
 
-def section(num, title, accent, emoji, subtitle, body):
-    sections.append(f"""
-<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=320&section=header&text=AVINASH%20PANDEY&fontSize=82&fontColor=ffffff&fontAlignY=36&desc=AI%20ENGINEER%20%7C%20MOBILE%20ARCHITECT%20%7C%20FULL%20STACK%20BUILDER&descSize=19&descAlignY=58&descColor=67e8f9&color=0:020617,20:0f172a,45:1e1b4b,70:164e63,100:020617&animation=twinkling"/>
 
-<table width="100%">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=24&duration=2600&pause=650&color=67E8F9&center=true&vCenter=true&width=1000&height=65&lines=BOOTING+AVINASH.OS...+%E2%9C%93;AI+ENGINEERING+MODE%3A+ACTIVE+%F0%9F%A7%A0;BUILDING+PRODUCTS+THAT+DIDN'T+EXIST+YET+%F0%9F%9A%80;SWIFTUI+%2B+FLUTTER+%2B+PYTHON+%2B+FULL+STACK;RESEARCH+%E2%86%92+ENGINEERING+%E2%86%92+REAL+WORLD+IMPACT"/>
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=avinash9354&style=for-the-badge&color=06b6d4&label=PROFILE%20SIGNALS"/>
+<img src="https://img.shields.io/github/followers/avinash9354?style=for-the-badge&label=NETWORK&color=6366f1&labelColor=020617"/>
+<img src="https://img.shields.io/badge/STATUS-BUILDING%20AI-22c55e?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/MODE-INNOVATION-f97316?style=for-the-badge&labelColor=020617"/>
+
+<br/><br/>
+
+> **"I don't just use technology. I build systems that make technology feel invisible."**
+
+</div>
+
+---
+
+# 00 · `BOOT SEQUENCE`
+
+```text
+╔══════════════════════════════════════════════════════════════════════╗
+║                        AVINASH.OS :: BOOT                            ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  [✓] Identity Kernel ..................................... ONLINE   ║
+║  [✓] AI Research Engine .................................. ONLINE   ║
+║  [✓] iOS Engineering Stack ............................... ONLINE   ║
+║  [✓] Flutter Runtime ..................................... ONLINE   ║
+║  [✓] Full-Stack Services .................................. ONLINE   ║
+║  [✓] Product Architecture .................................. ONLINE  ║
+║  [✓] Creative Engine ...................................... ONLINE   ║
+║                                                                      ║
+║  SYSTEM TARGET:                                                     ║
+║                                                                      ║
+║  Build → Ship → Measure → Learn → Rebuild → Scale                   ║
+║                                                                      ║
+║  CURRENT MISSION:                                                   ║
+║  Turn ambitious ideas into intelligent, production-grade products. ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+# 01 · `IDENTITY`
+
+<table>
 <tr>
-<td bgcolor="#080014">
+<td width="55%" valign="top">
 
-# {emoji} {num:02d} · {title}
+## 👋 Hello, I'm Avinash
 
-### <font color="{accent}">{subtitle}</font>
+I'm an **AI-focused software engineer and product builder** interested in the intersection of:
+
+- 🤖 Artificial Intelligence
+- 🧠 Machine Learning
+- 📱 iOS Engineering
+- 🦋 Flutter Development
+- 🌐 Full-Stack Systems
+- 🏗️ Software Architecture
+- ☁️ Cloud & Deployment
+- 🎨 Product Experience
+- 🔬 Applied Research
+
+My goal is simple:
+
+> **Take an idea from a blank screen to a real product.**
+
+I enjoy working across the entire stack instead of living inside one layer.
+
+</td>
+
+<td width="45%" align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=avinash9354&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=020617&title_color=67e8f9&icon_color=a78bfa&text_color=e2e8f0"/>
+
+<br/><br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=avinash9354&hide_border=true&background=020617&stroke=312e81&ring=67e8f9&fire=f97316&currStreakLabel=67e8f9&sideLabels=e2e8f0&dates=94a3b8"/>
 
 </td>
 </tr>
 </table>
 
-</div>
+---
 
-{body}
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=5&section=header&color=0:{accent.lstrip('#')},50:FF2BD6,100:00F5FF"/>
-
-</div>
-
-""")
-
-section(1,"WELCOME TO MY DIGITAL UNIVERSE","#00F5FF","🌌",
-        "AI • SOFTWARE • MOBILE • SYSTEMS • IMAGINATION",
-r'''
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=330&section=header&text=AVINASH%20PANDEY&fontSize=82&fontColor=ffffff&fontAlignY=40&desc=BUILDING%20INTELLIGENT%20DIGITAL%20EXPERIENCES&descSize=18&descAlignY=67&descColor=00F5FF&stroke=00F5FF&strokeWidth=2&color=0:020617,25:172554,50:312e81,75:701a75,100:020617&animation=twinkling"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=900&size=25&duration=2200&pause=500&color=00F5FF&center=true&vCenter=true&width=1000&height=65&lines=SYSTEM+ONLINE+%E2%9C%93;AI+ENGINEERING+%E2%80%A2+iOS+%E2%80%A2+FLUTTER+%E2%80%A2+FULL+STACK;IDEAS+INTO+PRODUCTS+%F0%9F%9A%80;BUILDING+WHAT+DOESN'T+EXIST+YET+%E2%9C%A8"/>
-
-<br>
-
-<img src="https://img.shields.io/badge/AI%20LAB-ONLINE-00F5FF?style=for-the-badge&labelColor=080014">
-<img src="https://img.shields.io/badge/BUILD%20MODE-ACTIVE-FF2BD6?style=for-the-badge&labelColor=080014">
-<img src="https://img.shields.io/badge/CREATIVITY-INFINITE-FF8A00?style=for-the-badge&labelColor=080014">
-
-</div>
-''')
-
-section(2,"IDENTITY CORE","#A78BFA","🧬",
-        "WHO IS AVINASH?",
-r'''
-<table width="100%">
-<tr>
-<td width="55%" bgcolor="#10002B">
+# 02 · `WHOAMI`
 
 ```yaml
-name: Avinash Pandey
-base: India 🇮🇳
-role:
-  - AI Developer
-  - iOS Developer
-  - Flutter Developer
-  - Full Stack Developer
+profile:
+  name: "Avinash Pandey"
+  location: "India 🇮🇳"
+  identity:
+    - "AI Developer"
+    - "iOS Developer"
+    - "Flutter Developer"
+    - "Full Stack Developer"
+    - "ML Explorer"
 
-mission: >
-  Build intelligent products that feel simple,
-  fast and magical to use.
+mission:
+  statement: >
+    Build intelligent software products that solve meaningful problems
+    while delivering exceptional user experiences.
 
-mindset:
-  curiosity: maximum
-  learning: continuous
-  building: relentless
-  imagination: unlimited
+interests:
+  artificial_intelligence: true
+  machine_learning: true
+  mobile_engineering: true
+  software_architecture: true
+  product_engineering: true
+  open_source: true
+
+engineering_style:
+  thinking: "systems-first"
+  building: "prototype → validate → production"
+  priority: "performance + reliability + experience"
+  mindset: "learn by building"
+
+current_mode:
+  status: "BUILDING"
+  energy: "HIGH"
+  curiosity: "UNLIMITED"
 ```
 
-</td>
-<td width="45%" bgcolor="#071A2B">
+---
 
-### ⚡ PERSONAL ENGINE
+# 03 · `ENGINEERING DNA`
 
-**Think** → Systems  
-**Design** → Experiences  
-**Build** → Products  
-**Measure** → Results  
-**Learn** → Faster  
-**Repeat** → Better
-
-</td>
-</tr>
-</table>
-''')
-
-section(3,"NEON PROFILE CARD","#FF2BD6","💎",
-        "A PROFILE THAT FEELS LIKE A PRODUCT",
-r'''
 <div align="center">
 
-<table width="100%">
-<tr>
-<td bgcolor="#21002E" align="center">🧠<br><b>AI</b><br>Intelligence</td>
-<td bgcolor="#001F2E" align="center">📱<br><b>MOBILE</b><br>Experience</td>
-<td bgcolor="#2B1020" align="center">🌐<br><b>WEB</b><br>Scale</td>
-<td bgcolor="#241300" align="center">⚡<br><b>SYSTEMS</b><br>Architecture</td>
-<td bgcolor="#082414" align="center">🚀<br><b>PRODUCT</b><br>Impact</td>
-</tr>
-</table>
-
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=avinash9354&style=for-the-badge&color=00F5FF&label=PROFILE%20VISITORS">
-<img src="https://img.shields.io/github/followers/avinash9354?style=for-the-badge&color=FF2BD6&labelColor=10002B&label=FOLLOWERS">
-<img src="https://img.shields.io/github/stars/avinash9354?style=for-the-badge&color=FFB000&labelColor=211300&label=STARS">
+| DIMENSION | MY APPROACH |
+|---|---|
+| 🧠 Thinking | Systems over isolated features |
+| 🔬 Learning | Build real projects |
+| 🎨 Design | Simple, intentional interfaces |
+| ⚡ Performance | Optimize where it matters |
+| 🔐 Security | Design security into architecture |
+| 🤖 AI | Useful intelligence over hype |
+| 📱 Mobile | Native-quality experiences |
+| 🌐 Web | Scalable and maintainable systems |
+| 🧪 Testing | Validate assumptions early |
+| 🚀 Shipping | Working software beats perfect plans |
 
 </div>
-''')
 
-section(4,"TECHNOLOGY GALAXY","#00D9FF","🌈",
-        "THE STACK BEHIND THE IDEAS",
-r'''
+---
+
+# 04 · `THE TECHNOLOGY CONSTELLATION`
+
 <div align="center">
 
-### 🧠 LANGUAGES
-<img src="https://skillicons.dev/icons?i=swift,python,dart,typescript,javascript,java,cpp,c&theme=dark&perline=8">
+### Languages
 
-### 🎨 FRONTEND
-<img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind,threejs&theme=dark&perline=8">
+<img src="https://skillicons.dev/icons?i=swift,python,dart,typescript,javascript,java,cpp,c&theme=dark&perline=8"/>
 
-### ⚙️ BACKEND
-<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,spring&theme=dark&perline=8">
+### Frontend
 
-### 🤖 AI / ML
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,python&theme=dark&perline=8">
+<img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind,threejs&theme=dark&perline=8"/>
 
-### ☁️ INFRASTRUCTURE
-<img src="https://skillicons.dev/icons?i=docker,linux,githubactions,vercel,git&theme=dark&perline=8">
+### Backend
 
-</div>
-''')
+<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,spring&theme=dark&perline=8"/>
 
-section(5,"COLOR ENGINE","#FF7A00","🎨",
-        "EVERY SYSTEM NEEDS A VISUAL LANGUAGE",
-r'''
-<table width="100%">
-<tr>
-<td bgcolor="#001F26">
+### Mobile
 
-### CYAN
-`#00F5FF`
+<img src="https://skillicons.dev/icons?i=swift,flutter,androidstudio&theme=dark&perline=8"/>
 
-Intelligence · Technology · Motion · Future
+### AI / ML
 
-</td>
-<td bgcolor="#260020">
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,python,opencv&theme=dark&perline=8"/>
 
-### MAGENTA
-`#FF2BD6`
+### Databases
 
-Creativity · Energy · Expression · AI
+<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,firebase,redis&theme=dark&perline=8"/>
 
-</td>
-<td bgcolor="#21005A">
+### DevOps / Cloud
 
-### VIOLET
-`#7C3AED`
+<img src="https://skillicons.dev/icons?i=docker,githubactions,linux,vercel,git&theme=dark&perline=8"/>
 
-Innovation · Research · Imagination
+### Developer Tools
 
-</td>
-<td bgcolor="#271000">
-
-### ORANGE
-`#FF7A00`
-
-Action · Product · Momentum · Shipping
-
-</td>
-</tr>
-</table>
-
-> The visual system intentionally moves between cool intelligence and warm human creativity.
-''')
-
-section(6,"AI COMMAND CENTER","#7C3AED","🧠",
-        "ARTIFICIAL INTELLIGENCE IS THE CORE",
-r'''
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=18&duration=1800&pause=500&color=A78BFA&center=true&vCenter=true&width=900&height=45&lines=NEURAL+NETWORKS+ONLINE;COMPUTER+VISION+ONLINE;GENERATIVE+AI+ONLINE;MODEL+DEPLOYMENT+ONLINE" alt="AI animation">
+<img src="https://skillicons.dev/icons?i=xcode,vscode,figma,github,git&theme=dark&perline=8"/>
 
 </div>
+
+---
+
+# 05 · `LANGUAGE MATRIX`
 
 ```text
-                    ┌─────────────────────┐
-                    │    AI APPLICATION    │
-                    └──────────┬──────────┘
-                               │
-             ┌─────────────────┼─────────────────┐
-             ▼                 ▼                 ▼
-        GENERATIVE          VISION             ML
-             │                 │                 │
-          LLMs              CNNs            Prediction
-          RAG               OCR             Classification
-          Agents            Detection       Forecasting
-          Tools             Segmentation    Optimization
+┌─────────────────────────────────────────────────────────────────┐
+│                    LANGUAGE ENGINEERING MAP                     │
+├──────────────────────┬──────────────────────┬───────────────────┤
+│ Swift                │ ██████████████████░░ │ Mobile            │
+│ Python               │ ███████████████████░ │ AI / ML           │
+│ TypeScript           │ █████████████████░░░ │ Full Stack        │
+│ Dart                 │ ████████████████░░░░ │ Flutter           │
+│ JavaScript           │ ████████████████░░░░ │ Web               │
+│ Java                 │ █████████████░░░░░░░ │ Backend            │
+│ C++                  │ ███████████░░░░░░░░░ │ Systems / DSA      │
+│ C                    │ ██████████░░░░░░░░░░ │ Fundamentals       │
+└──────────────────────┴──────────────────────┴───────────────────┘
 ```
-''')
 
-section(7,"AI RESEARCH LAB","#FF2BD6","🔬",
-        "EXPERIMENT → MEASURE → IMPROVE",
-r'''
+---
+
+# 06 · `AI LAB`
+
 <div align="center">
 
-<table width="100%">
-<tr>
-<td bgcolor="#16001E">🧪<br><b>EXPERIMENT</b><br>Try a hypothesis</td>
-<td bgcolor="#001D2A">📊<br><b>MEASURE</b><br>Collect evidence</td>
-<td bgcolor="#211040">🧠<br><b>UNDERSTAND</b><br>Find the signal</td>
-<td bgcolor="#2B1100">⚡<br><b>OPTIMIZE</b><br>Improve the system</td>
-<td bgcolor="#052417">🚀<br><b>SHIP</b><br>Turn research into value</td>
-</tr>
-</table>
+<img src="https://img.shields.io/badge/AI%20LAB-ACTIVE-67e8f9?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/DEEP%20LEARNING-RESEARCH-a78bfa?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/COMPUTER%20VISION-EXPLORING-22c55e?style=for-the-badge&labelColor=020617"/>
 
 </div>
-''')
 
-section(8,"GENERATIVE AI","#C026D3","✨",
-        "FROM PROMPT TO INTELLIGENT PRODUCT",
-r'''
+## 🧠 Areas of Exploration
+
+```text
+                    ┌────────────────────┐
+                    │    AI APPLICATION   │
+                    └─────────┬──────────┘
+                              │
+          ┌───────────────────┼───────────────────┐
+          ▼                   ▼                   ▼
+   ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+   │  GENERATIVE │     │ COMPUTER    │     │  PREDICTIVE │
+   │     AI      │     │   VISION    │     │     ML      │
+   └──────┬──────┘     └──────┬──────┘     └──────┬──────┘
+          │                   │                   │
+          ▼                   ▼                   ▼
+       LLMs               CNNs              Regression
+       Agents             Detection         Classification
+       RAG                Restoration       Forecasting
+       Prompting          Segmentation      Optimization
+```
+
+### Current AI Interests
+
+- Neural network architectures
+- Computer vision
+- Image enhancement
+- Generative AI
+- LLM-powered applications
+- On-device inference
+- CoreML optimization
+- Model compression
+- AI product engineering
+- Real-time inference pipelines
+
+---
+
+# 07 · `AI ENGINEERING PIPELINE`
+
+```mermaid
+flowchart TD
+
+A[Problem] --> B[Dataset]
+B --> C[Exploration]
+C --> D[Preprocessing]
+D --> E[Model Design]
+E --> F[Training]
+F --> G[Evaluation]
+G --> H{Good Enough?}
+
+H -- No --> I[Experiment]
+I --> E
+
+H -- Yes --> J[Optimization]
+J --> K[Export]
+K --> L[API / CoreML]
+L --> M[Product]
+M --> N[Monitoring]
+N --> I
+
+style A fill:#020617,stroke:#67e8f9,color:#fff
+style E fill:#020617,stroke:#a78bfa,color:#fff
+style J fill:#020617,stroke:#f97316,color:#fff
+style M fill:#020617,stroke:#22c55e,color:#fff
+```
+
+---
+
+# 08 · `MOBILE ENGINEERING`
+
+## 🍎 iOS
+
+My iOS engineering interests include:
+
+- Swift
+- SwiftUI
+- UIKit
+- CoreML
+- Core Data
+- Networking
+- Concurrency
+- MVVM
+- Modular architecture
+- App performance
+- Accessibility
+- Animation
+- API integration
+
+### iOS Philosophy
+
+```text
+UI
+ ↓
+Presentation
+ ↓
+Domain
+ ↓
+Data
+ ↓
+Infrastructure
+ ↓
+External Services
+```
+
+The objective:
+
+> **Keep features independent, testable and scalable.**
+
+---
+
+# 09 · `FLUTTER ENGINEERING`
+
+```text
+Flutter Application
+        │
+        ├── Presentation
+        │      ├── Widgets
+        │      ├── Animations
+        │      └── Themes
+        │
+        ├── State
+        │      ├── Riverpod
+        │      └── Reactive State
+        │
+        ├── Domain
+        │      ├── Use Cases
+        │      └── Entities
+        │
+        ├── Data
+        │      ├── APIs
+        │      ├── Firebase
+        │      └── Local Storage
+        │
+        └── AI
+               ├── On-device models
+               ├── Image processing
+               └── Intelligent features
+```
+
+---
+
+# 10 · `FULL STACK ARCHITECTURE`
+
 ```mermaid
 flowchart LR
-U[👤 USER] --> UI[✨ AI UI]
-UI --> O[🧠 ORCHESTRATOR]
-O --> C[📚 CONTEXT]
-O --> T[🛠 TOOLS]
-O --> M[🤖 MODEL]
-M --> S[⚡ STREAM]
-S --> UI
-C --> M
-T --> M
+
+CLIENT[Web / iOS / Android] --> EDGE[Edge / CDN]
+EDGE --> GATEWAY[API Gateway]
+
+GATEWAY --> AUTH[Authentication]
+GATEWAY --> SERVICE[Application Services]
+
+SERVICE --> DB[(PostgreSQL)]
+SERVICE --> NOSQL[(MongoDB)]
+SERVICE --> CACHE[(Redis)]
+
+SERVICE --> AI[AI Service]
+AI --> MODEL[Model Runtime]
+
+SERVICE --> STORAGE[Object Storage]
+
+SERVICE --> QUEUE[Job Queue]
+QUEUE --> WORKER[Workers]
+
+WORKER --> AI
+
+style CLIENT fill:#020617,stroke:#67e8f9,color:#fff
+style AI fill:#020617,stroke:#a78bfa,color:#fff
+style DB fill:#020617,stroke:#22c55e,color:#fff
+style MODEL fill:#020617,stroke:#f97316,color:#fff
 ```
 
-<div align="center">
-<img src="https://img.shields.io/badge/LLM-INTELLIGENCE-FF2BD6?style=for-the-badge&labelColor=120018">
-<img src="https://img.shields.io/badge/RAG-CONTEXT-7C3AED?style=for-the-badge&labelColor=120018">
-<img src="https://img.shields.io/badge/TOOLS-ACTIONS-00F5FF?style=for-the-badge&labelColor=120018">
-</div>
-''')
+---
 
-section(9,"COMPUTER VISION","#00E5FF","👁️",
-        "TEACHING SOFTWARE TO SEE",
-r'''
-<table width="100%">
-<tr>
-<td bgcolor="#001B24">🖼️<br><b>IMAGE</b></td>
-<td bgcolor="#082E3A">🔍<br><b>FEATURES</b></td>
-<td bgcolor="#123A35">🧠<br><b>MODEL</b></td>
-<td bgcolor="#2D1A05">⚡<br><b>INFERENCE</b></td>
-<td bgcolor="#27102A">✨<br><b>RESULT</b></td>
-</tr>
-</table>
+# 11 · `BACKEND MINDSET`
 
-### Focus Areas
+### API Design
 
-`Classification` · `Detection` · `Segmentation` · `OCR` · `Restoration` · `Enhancement` · `Tracking`
-''')
-
-section(10,"ON-DEVICE AI","#22D3EE","📱",
-        "INTELLIGENCE WITHOUT WAITING FOR THE CLOUD",
-r'''
-```text
-PYTORCH / TENSORFLOW
-        ↓
-MODEL OPTIMIZATION
-        ↓
-CONVERSION
-        ↓
-COREML
-        ↓
-iPHONE / iPAD
-        ↓
-REAL-TIME INFERENCE
-```
-
-<div align="center">
-<img src="https://img.shields.io/badge/LOW%20LATENCY-00F5FF?style=for-the-badge&labelColor=06141A">
-<img src="https://img.shields.io/badge/PRIVACY-22C55E?style=for-the-badge&labelColor=06140A">
-<img src="https://img.shields.io/badge/OFFLINE-A78BFA?style=for-the-badge&labelColor=120B24">
-</div>
-''')
-
-section(11,"iOS LAB","#FF375F","🍎",
-        "SWIFT • SWIFTUI • COREML",
-r'''
-<div align="center">
-<img src="https://skillicons.dev/icons?i=swift&theme=dark" width="90">
-</div>
-
-### Architecture
-
-```text
-SwiftUI
-   ↓
-Presentation
-   ↓
-ViewModel
-   ↓
-Domain
-   ↓
-Repository
-   ↓
-Networking / Local Data
-   ↓
-Services
-```
-
-### Engineering Priorities
-
-**Smooth UI** · **Concurrency** · **Accessibility** · **Performance** · **Offline-first thinking** · **Native feel**
-''')
-
-section(12,"FLUTTER LAB","#54C5F8","🦋",
-        "ONE CODEBASE • MANY EXPERIENCES",
-r'''
-<div align="center">
-<img src="https://skillicons.dev/icons?i=flutter,dart,firebase&theme=dark&perline=3">
-</div>
-
-```text
-Flutter
- ├── Presentation
- │    ├── Widgets
- │    ├── Animation
- │    └── Theme
- ├── State
- │    └── Riverpod
- ├── Domain
- │    └── Use Cases
- ├── Data
- │    ├── API
- │    └── Local Storage
- └── AI
-      ├── Vision
-      └── On-device inference
-```
-''')
-
-section(13,"WEB EXPERIENCE","#38BDF8","🌐",
-        "INTERFACES THAT FEEL ALIVE",
-r'''
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=react,nextjs,typescript,tailwind,threejs&theme=dark&perline=5">
-
-</div>
-
-### UI Principles
-
-`Hierarchy` → `Contrast` → `Motion` → `Feedback` → `Delight`
-
-I like interfaces where animation has a purpose instead of being decoration.
-''')
-
-section(14,"BACKEND ENGINE","#22C55E","⚙️",
-        "THE MACHINERY BEHIND THE EXPERIENCE",
-r'''
 ```text
 REQUEST
    ↓
-EDGE
+Validation
    ↓
-API GATEWAY
+Authentication
    ↓
-AUTH
+Authorization
    ↓
-VALIDATION
+Business Logic
    ↓
-SERVICE
+Persistence
    ↓
-DATABASE
+Response
    ↓
-CACHE / QUEUE
-   ↓
-RESPONSE
+Observability
 ```
 
+### Backend Priorities
+
+- predictable APIs
+- strong validation
+- clean error handling
+- authentication
+- authorization
+- caching
+- database indexing
+- observability
+- rate limiting
+- graceful failures
+
+---
+
+# 12 · `DATABASE LAB`
+
 <div align="center">
-<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,spring&theme=dark&perline=5">
+
+| DATABASE | USE CASE |
+|---|---|
+| PostgreSQL | Relational systems |
+| MongoDB | Document-oriented systems |
+| Firebase | Rapid product development |
+| Redis | Cache / queues / fast state |
+| MySQL | Relational workloads |
+
 </div>
-''')
 
-section(15,"DATABASE MATRIX","#06B6D4","🗄️",
-        "DATA IS PART OF THE ARCHITECTURE",
-r'''
-| SYSTEM | STRENGTH | USE |
-|---|---|---|
-| 🐘 PostgreSQL | Relational integrity | Core systems |
-| 🍃 MongoDB | Flexible documents | Product data |
-| 🔥 Firebase | Rapid development | Mobile products |
-| ⚡ Redis | Ultra-fast state | Cache / queues |
-| 🐬 MySQL | Mature relational DB | Applications |
+### Data Engineering Principle
 
-### Query mindset
-
-`Schema` → `Index` → `Query Plan` → `Cache` → `Measure`
-''')
-
-section(16,"CLOUD & DEVOPS","#F97316","☁️",
-        "FROM LAPTOP TO PRODUCTION",
-r'''
 ```text
-LOCAL
- ↓
-GIT
- ↓
-PULL REQUEST
- ↓
-CI
- ├── TEST
- ├── LINT
- ├── BUILD
- └── SECURITY
- ↓
-CONTAINER
- ↓
-DEPLOY
- ↓
-MONITOR
+Fast queries are designed,
+not hoped for.
+
+Schema
+  ↓
+Indexes
+  ↓
+Query plan
+  ↓
+Cache
+  ↓
+Observability
 ```
 
-<div align="center">
-<img src="https://skillicons.dev/icons?i=docker,linux,githubactions,vercel,git&theme=dark&perline=5">
-</div>
-''')
+---
 
-section(17,"SYSTEM DESIGN","#A855F7","🏗️",
-        "THINK IN SYSTEMS, NOT FILES",
-r'''
-```mermaid
-flowchart TB
-USER[User] --> EDGE[CDN / Edge]
-EDGE --> API[API Gateway]
-API --> AUTH[Auth]
-API --> CORE[Core Services]
-CORE --> DB[(Database)]
-CORE --> CACHE[(Redis)]
-CORE --> AI[AI Service]
-CORE --> QUEUE[Queue]
-QUEUE --> WORKER[Workers]
-WORKER --> AI
-AI --> MODEL[Model Runtime]
-```
-''')
+# 13 · `DEVOPS ENGINE`
 
-section(18,"SECURITY","#EF4444","🔐",
-        "TRUST IS AN ENGINEERING FEATURE",
-r'''
-<div align="center">
-
-| 🔑 AUTH | 🛡️ ACCESS | 🔒 DATA | 🚦 RATE LIMIT |
-|---|---|---|---|
-| Identity | Permissions | Encryption | Abuse control |
-
-</div>
-
-### Security checklist
-
-`Validation` · `Secrets` · `Least Privilege` · `Encryption` · `Logging` · `Monitoring` · `Dependency Hygiene`
-''')
-
-section(19,"PERFORMANCE","#F59E0B","⚡",
-        "FAST IS A FEATURE",
-r'''
 ```text
-USER EXPERIENCE
-      ↓
-RENDERING
-      ↓
-NETWORK
-      ↓
-API
-      ↓
-CACHE
-      ↓
-DATABASE
-      ↓
-COMPUTE
-      ↓
-AI INFERENCE
+Developer
+    │
+    ▼
+Git Commit
+    │
+    ▼
+Pull Request
+    │
+    ▼
+Automated Checks
+    │
+    ├── Lint
+    ├── Test
+    ├── Build
+    └── Security
+    │
+    ▼
+Container
+    │
+    ▼
+Deployment
+    │
+    ▼
+Monitoring
 ```
 
-### Optimization questions
+### Tools
 
-**What is slow?**  
-**Why is it slow?**  
-**Can it be cached?**  
-**Can it be parallelized?**  
-**Can it move on-device?**
-''')
+- Git
+- GitHub
+- GitHub Actions
+- Docker
+- Linux
+- Vercel
+- Render
+- Cloud infrastructure
+- CI/CD pipelines
 
-section(20,"PRODUCT ENGINEERING","#FF2BD6","🚀",
-        "IDEA → PRODUCT → IMPACT",
-r'''
-<div align="center">
+---
 
-<table width="100%">
-<tr>
-<td bgcolor="#19001F">💡<br><b>IDEA</b></td>
-<td bgcolor="#25103B">🔎<br><b>RESEARCH</b></td>
-<td bgcolor="#102A3A">🎨<br><b>DESIGN</b></td>
-<td bgcolor="#082B1A">🛠️<br><b>BUILD</b></td>
-<td bgcolor="#2D1600">🚀<br><b>SHIP</b></td>
-<td bgcolor="#241024">📈<br><b>MEASURE</b></td>
-</tr>
-</table>
+# 14 · `PROJECT GALAXY`
 
-</div>
-''')
+## ✈️ Flight Booking iOS
 
-section(21,"FLIGHT BOOKING","#00D9FF","✈️",
-        "A MODERN TRAVEL EXPERIENCE",
-r'''
+**Category:** FinTech / Travel / Mobile
+
 ```text
 SEARCH
   ↓
@@ -541,473 +535,1417 @@ CONFIRMATION
 TICKET
 ```
 
-**Stack:** Swift · SwiftUI · APIs · Payment Architecture · State Management
-''')
+### Engineering Focus
 
-section(22,"AI CHAT APPLICATION","#8B5CF6","💬",
-        "CONVERSATION AS A PRODUCT",
-r'''
+- SwiftUI interface
+- booking state management
+- API integration
+- payment architecture
+- passenger data
+- ticket generation
+- error states
+- loading states
+- responsive UX
+
+---
+
+## 🤖 AI Conversational Application
+
+**Category:** Generative AI
+
 ```text
 USER
  ↓
-MESSAGE
+PROMPT
  ↓
 CONTEXT
  ↓
-AI
+AI SERVICE
+ ↓
+MODEL
  ↓
 STREAM
  ↓
-MESSAGE UI
- ↓
-MEMORY
+UI
 ```
 
-### Experience goals
+### Product Goals
 
-`Instant feedback` · `Streaming` · `Context` · `Conversation history` · `Useful intelligence`
-''')
+- fast response rendering
+- conversational UX
+- streaming responses
+- conversation history
+- intelligent context
+- clean mobile interface
 
-section(23,"AI PHOTO EDITOR","#EC4899","📸",
-        "COMPUTER VISION IN YOUR POCKET",
-r'''
+---
+
+## 🎨 AI Photo Editor
+
+**Category:** Computer Vision
+
 ```text
 PHOTO
  ↓
 PREPROCESS
  ↓
-AI MODEL
+MODEL
  ↓
-DENOISE
+INFERENCE
  ↓
-RESTORE
+POSTPROCESS
  ↓
-ENHANCE
- ↓
-EXPORT
+RESULT
 ```
 
-### Possible intelligence
+Potential capabilities:
 
-**Denoise** · **Restore** · **Upscale** · **Enhance** · **Smart Crop** · **Color Intelligence**
-''')
+- denoise
+- enhancement
+- restoration
+- upscaling
+- color improvement
+- intelligent cropping
+- on-device processing
 
-section(24,"SATELLITE AI","#10B981","🛰️",
-        "GENERATIVE AI FOR EARTH OBSERVATION",
-r'''
-```text
-SATELLITE IMAGE
-      ↓
-CLOUD DETECTION
-      ↓
-MASK GENERATION
-      ↓
-CONTEXT ANALYSIS
-      ↓
-RECONSTRUCTION
-      ↓
-ENHANCEMENT
-      ↓
-QUALITY CHECK
-```
+---
 
-**Research themes:** remote sensing · image reconstruction · generative models · temporal intelligence
-''')
+## 🛰️ Satellite Image Reconstruction
 
-section(25,"ORBIX VISION","#38BDF8","🌌",
-        "A BROADER SOFTWARE ECOSYSTEM",
-r'''
-<div align="center">
-
-<img src="https://img.shields.io/badge/ORBIX-BROWSER-00F5FF?style=for-the-badge&labelColor=020617">
-<img src="https://img.shields.io/badge/ORBIX-OS-7C3AED?style=for-the-badge&labelColor=020617">
-<img src="https://img.shields.io/badge/ORBIX-AI-FF2BD6?style=for-the-badge&labelColor=020617">
-
-</div>
-
-### Ecosystem thinking
+**Category:** Generative AI / Earth Observation
 
 ```text
-USER
- ├── Browser
- ├── AI
- ├── Secure Environment
- ├── Developer Tools
- └── Intelligent Services
+Satellite Image
+       ↓
+Cloud Detection
+       ↓
+Cloud Mask
+       ↓
+Context Extraction
+       ↓
+Reconstruction Model
+       ↓
+Enhancement
+       ↓
+Quality Evaluation
+       ↓
+Restored Image
 ```
 
-The long-term idea: make complex technology feel simple.
-''')
+---
 
-section(26,"SKYAI VISION","#60A5FA","🌍",
-        "INTELLIGENT TRAVEL EXPERIENCES",
-r'''
+# 15 · `PRODUCT ENGINEERING`
+
+I don't think only in terms of features.
+
+I think in terms of:
+
 ```text
-DISCOVER
-   ↓
-UNDERSTAND
-   ↓
-RECOMMEND
-   ↓
-PLAN
-   ↓
-BOOK
-   ↓
-TRAVEL
-   ↓
-REMEMBER
+Problem
+ ↓
+User
+ ↓
+Experience
+ ↓
+System
+ ↓
+Data
+ ↓
+AI
+ ↓
+Infrastructure
+ ↓
+Business
+ ↓
+Scale
 ```
 
-### Intelligence layer
+A good product isn't only technically impressive.
 
-`Recommendations` · `Itinerary generation` · `Conversational assistant` · `Contextual suggestions`
-''')
+It should also be:
 
-section(27,"AI PHOTO / VISION LAB","#F472B6","🧪",
-        "EXPERIMENTING WITH VISUAL INTELLIGENCE",
-r'''
-<div align="center">
+- understandable
+- reliable
+- fast
+- useful
+- maintainable
+- measurable
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=1600&pause=450&color=F472B6&center=true&vCenter=true&width=850&height=45&lines=PIXEL+%E2%86%92+FEATURE+%E2%86%92+MODEL+%E2%86%92+IMAGE;QUALITY+%E2%86%92+LATENCY+%E2%86%92+MEMORY+%E2%86%92+BATTERY" alt="Vision lab animation"/>
+---
 
-</div>
-''')
+# 16 · `UI / UX ENGINE`
 
-section(28,"ENGINEERING WORKFLOW","#14B8A6","🔄",
-        "BUILDING WITHOUT LOSING THE BIG PICTURE",
-r'''
+### Design Principles
+
 ```text
-01  DEFINE THE PROBLEM
-02  UNDERSTAND THE USER
-03  DESIGN THE SYSTEM
-04  PROTOTYPE
-05  TEST THE ASSUMPTIONS
-06  BUILD THE CORE
-07  OBSERVE
-08  OPTIMIZE
-09  SHIP
-10  LEARN
+LESS NOISE
+    ↓
+CLEAR HIERARCHY
+    ↓
+FAST FEEDBACK
+    ↓
+INTENTIONAL MOTION
+    ↓
+ACCESSIBLE INTERACTION
 ```
-''')
 
-section(29,"CODE PHILOSOPHY","#F59E0B","🧩",
-        "CODE SHOULD HELP THE NEXT PERSON",
-r'''
-<div align="center">
+### Animation Philosophy
 
-| PRINCIPLE | SIGNAL |
+Animation should communicate:
+
+- state
+- hierarchy
+- transition
+- feedback
+- personality
+
+Not simply exist because it can.
+
+---
+
+# 17 · `SYSTEM DESIGN`
+
+```mermaid
+flowchart TB
+
+USER[User]
+API[API Gateway]
+AUTH[Auth Service]
+CORE[Core Service]
+AI[AI Service]
+DB[(Primary DB)]
+CACHE[(Redis)]
+QUEUE[Queue]
+WORKER[Worker]
+OBS[Observability]
+
+USER --> API
+API --> AUTH
+API --> CORE
+CORE --> DB
+CORE --> CACHE
+CORE --> AI
+CORE --> QUEUE
+QUEUE --> WORKER
+WORKER --> AI
+
+API --> OBS
+CORE --> OBS
+AI --> OBS
+
+style USER fill:#020617,stroke:#67e8f9,color:#fff
+style AI fill:#020617,stroke:#a78bfa,color:#fff
+style DB fill:#020617,stroke:#22c55e,color:#fff
+style OBS fill:#020617,stroke:#f97316,color:#fff
+```
+
+---
+
+# 18 · `SECURITY FIRST`
+
+Security belongs inside the architecture.
+
+### Security Checklist
+
+```text
+[✓] Authentication
+[✓] Authorization
+[✓] Input validation
+[✓] Secret management
+[✓] Encryption
+[✓] Rate limiting
+[✓] Secure storage
+[✓] Dependency updates
+[✓] Logging
+[✓] Monitoring
+[✓] Least privilege
+```
+
+---
+
+# 19 · `PERFORMANCE LAB`
+
+### Optimization Layers
+
+```text
+UI
+ ↓
+Network
+ ↓
+API
+ ↓
+Database
+ ↓
+Cache
+ ↓
+Compute
+ ↓
+Model
+```
+
+### Performance Questions
+
+- What is the latency budget?
+- What can be cached?
+- What can be parallelized?
+- What should be asynchronous?
+- What belongs on-device?
+- What belongs server-side?
+- Where is the bottleneck?
+
+---
+
+# 20 · `AI + MOBILE`
+
+One of my strongest interests is bringing AI closer to the user.
+
+```text
+                 AI PRODUCT
+                     │
+          ┌──────────┴──────────┐
+          ▼                     ▼
+      CLOUD AI             ON-DEVICE AI
+          │                     │
+      Powerful              Private
+      Flexible              Fast
+      Scalable              Offline
+          │                     │
+          └──────────┬──────────┘
+                     ▼
+                HYBRID SYSTEM
+```
+
+---
+
+# 21 · `COREML LAB`
+
+### Model Deployment Pipeline
+
+```text
+PyTorch / TensorFlow
+        ↓
+Model Validation
+        ↓
+Optimization
+        ↓
+Conversion
+        ↓
+CoreML
+        ↓
+iOS Integration
+        ↓
+Benchmark
+        ↓
+Production
+```
+
+Goals:
+
+- lower latency
+- lower memory usage
+- better battery efficiency
+- privacy
+- offline inference
+
+---
+
+# 22 · `COMPUTER VISION`
+
+Areas of interest:
+
+| AREA | APPLICATION |
 |---|---|
-| Readability | 🟢 |
-| Modularity | 🟢 |
-| Testability | 🟢 |
-| Observability | 🟢 |
-| Performance | 🟡 |
-| Simplicity | 🟢 |
+| Classification | Image understanding |
+| Detection | Object localization |
+| Segmentation | Pixel-level understanding |
+| Restoration | Damaged image recovery |
+| Enhancement | Visual quality |
+| OCR | Text extraction |
+| Tracking | Object movement |
+| Transformation | Perspective / geometry |
 
-</div>
+---
 
-> **If future-me cannot understand it, present-me needs to refactor it.**
-''')
+# 23 · `MACHINE LEARNING WORKBENCH`
 
-section(30,"LEARNING ENGINE","#A78BFA","📚",
-        "LEARN BY BUILDING",
-r'''
 ```text
-QUESTION
-   ↓
-RESEARCH
-   ↓
-BUILD
-   ↓
-FAIL
-   ↓
-OBSERVE
-   ↓
-UNDERSTAND
-   ↓
-IMPROVE
-   ↓
-BUILD AGAIN
+Dataset
+   │
+   ├── Clean
+   ├── Normalize
+   ├── Augment
+   └── Split
+        │
+        ▼
+     Training
+        │
+        ├── Baseline
+        ├── Experiment
+        ├── Tune
+        └── Validate
+        │
+        ▼
+     Evaluation
+        │
+        ├── Accuracy
+        ├── Precision
+        ├── Recall
+        ├── F1
+        └── Latency
+        │
+        ▼
+     Deployment
 ```
 
-The fastest learning happens when theory meets a real problem.
-''')
+---
 
-section(31,"SKILL MATRIX","#22C55E","📊",
-        "THE CURRENT ENGINEERING MAP",
-r'''
-<div align="center">
+# 24 · `GENERATIVE AI`
 
-| DOMAIN | CURRENT FOCUS |
-|---|---|
-| 🧠 AI / ML | ████████████████████ |
-| 🐍 Python | ███████████████████ |
-| 🍎 Swift / SwiftUI | ██████████████████ |
-| 🦋 Flutter | █████████████████ |
-| 🌐 Full Stack | █████████████████ |
-| 👁️ Computer Vision | ████████████████ |
-| 🏗️ System Design | ██████████████ |
-| ☁️ DevOps | █████████████ |
+### Application Architecture
 
-</div>
-''')
+```mermaid
+flowchart LR
 
-section(32,"GITHUB TELEMETRY","#00F5FF","📈",
-        "THE ACTIVITY SIGNAL",
-r'''
-<div align="center">
+USER[User] --> UI[Application]
+UI --> ORCH[AI Orchestrator]
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=avinash9354&bg_color=050014&color=00F5FF&line=FF2BD6&point=FFB000&area=true&hide_border=true&custom_title=AVINASH%20ENGINEERING%20TELEMETRY">
+ORCH --> MEMORY[Context / Memory]
+ORCH --> TOOLS[Tools]
+ORCH --> MODEL[LLM]
+ORCH --> GUARD[Safety / Validation]
 
-<br><br>
+TOOLS --> DATA[External Data]
+MODEL --> STREAM[Streaming Response]
 
-<img width="48%" src="https://github-readme-stats.vercel.app/api?username=avinash9354&show_icons=true&hide_border=true&count_private=true&bg_color=050014&title_color=00F5FF&icon_color=FF2BD6&text_color=F5F3FF">
-<img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=avinash9354&hide_border=true&background=050014&stroke=7C3AED&ring=00F5FF&fire=FF7A00&currStreakLabel=FF2BD6&sideLabels=F5F3FF&dates=94A3B8">
+STREAM --> UI
 
-</div>
-''')
+style MODEL fill:#312e81,stroke:#a78bfa,color:#fff
+style ORCH fill:#020617,stroke:#67e8f9,color:#fff
+style GUARD fill:#020617,stroke:#f97316,color:#fff
+```
 
-section(33,"LANGUAGE DNA","#FF2BD6","🧬",
-        "WHAT THE CODE IS MADE OF",
-r'''
-<div align="center">
+---
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=avinash9354&layout=donut-vertical&hide_border=true&bg_color=050014&title_color=FF2BD6&text_color=F5F3FF&langs_count=10">
+# 25 · `OPEN SOURCE MINDSET`
 
-</div>
-''')
+Open source isn't just publishing code.
 
-section(34,"CONTRIBUTION GALAXY","#7C3AED","🐍",
-        "EVERY SQUARE IS A SMALL STORY",
-r'''
-<div align="center">
+It is:
 
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/avinash9354/avinash9354/output/github-snake-dark.svg">
-<img src="https://raw.githubusercontent.com/avinash9354/avinash9354/output/github-snake.svg" width="100%" alt="Contribution Snake">
-</picture>
-
-</div>
-''')
-
-section(35,"TROPHY WALL","#FFB000","🏆",
-        "MILESTONES, NOT DESTINATIONS",
-r'''
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=avinash9354&theme=onestar&no-frame=true&no-bg=true&margin-w=7&column=7" width="100%">
-
-</div>
-''')
-
-section(36,"ROADMAP","#00F5FF","🗺️",
-        "WHERE THE NEXT CHAPTERS LEAD",
-r'''
 ```text
-NOW
- │
- ├── AI APPLICATIONS
- ├── iOS / SwiftUI
- ├── Flutter
- ├── Full Stack
- │
- ▼
-NEXT
- │
- ├── Advanced AI
- ├── On-device inference
- ├── System design
- ├── Cloud architecture
- │
- ▼
-FUTURE
- │
- ├── Original research
- ├── Large-scale AI systems
- ├── Open source
- └── Technology products
-```
-''')
-
-section(37,"ENGINEERING VALUES","#22C55E","💚",
-        "WHAT MATTERS WHEN THE CODE GETS HARD",
-r'''
-<div align="center">
-
-<table width="100%">
-<tr>
-<td bgcolor="#062814">🧠<br><b>CURIOSITY</b><br>Ask why.</td>
-<td bgcolor="#08251D">🔐<br><b>OWNERSHIP</b><br>Understand the whole.</td>
-<td bgcolor="#102A16">✨<br><b>SIMPLICITY</b><br>Reduce the noise.</td>
-<td bgcolor="#2B1800">🔥<br><b>RESILIENCE</b><br>Keep iterating.</td>
-<td bgcolor="#0A2030">🚀<br><b>IMPACT</b><br>Build useful things.</td>
-</tr>
-</table>
-
-</div>
-''')
-
-section(38,"COMMAND CENTER","#00F5FF","🖥️",
-        "TERMINAL VIEW",
-r'''
-```bash
-$ whoami
-avinash-pandey
-
-$ focus
-AI + Software Engineering + Product Building
-
-$ stack
-Swift Python Dart TypeScript Java React Node Flutter PyTorch
-
-$ current_mode
-BUILDING
-
-$ philosophy
-Learn → Build → Break → Understand → Improve → Ship
-
-$ status
-████████████████████████████████████████  ONLINE
-
-$ next
-Create something extraordinary.
+Readable Code
+     +
+Useful Documentation
+     +
+Reproducible Setup
+     +
+Issues
+     +
+Discussions
+     +
+Community
+     =
+Healthy Project
 ```
 
+---
+
+# 26 · `GIT WORKFLOW`
+
+```text
+main
+ │
+ ├── feature/*
+ │
+ ├── fix/*
+ │
+ ├── refactor/*
+ │
+ └── experiment/*
+        │
+        ▼
+      PR
+        │
+        ▼
+   Review / CI
+        │
+        ▼
+     Merge
+        │
+        ▼
+      Release
+```
+
+---
+
+# 27 · `CODE QUALITY`
+
+### I care about
+
+- readability
+- naming
+- separation of concerns
+- error handling
+- testability
+- documentation
+- predictable behavior
+- performance
+- maintainability
+
+### Rule
+
+> If future-me cannot understand it, present-me needs to refactor it.
+
+---
+
+# 28 · `RESEARCH MODE`
+
+Research questions I like:
+
+```text
+Can AI run efficiently on-device?
+
+How can models become smaller without losing quality?
+
+How can computer vision solve real-world problems?
+
+How can mobile apps use AI without feeling slow?
+
+How should AI systems handle context?
+
+How can intelligent systems become simpler for users?
+```
+
+---
+
+# 29 · `LEARNING ENGINE`
+
+```text
+           CURIOUS
+              │
+              ▼
+           QUESTION
+              │
+              ▼
+           RESEARCH
+              │
+              ▼
+           PROTOTYPE
+              │
+              ▼
+           FAILURE
+              │
+              ▼
+           LEARNING
+              │
+              ▼
+           IMPROVEMENT
+              │
+              ▼
+           PRODUCT
+              │
+              └──────────────► CURIOUS
+```
+
+---
+
+# 30 · `CURRENTLY LEVELING UP`
+
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=19&duration=1700&pause=500&color=22C55E&center=true&vCenter=true&width=900&height=45&lines=%3E+system.status%28%29+%E2%86%92+ONLINE;%3E+ai.lab%28%29+%E2%86%92+ACTIVE;%3E+ideas.count%28%29+%E2%86%92+INFINITE" alt="Terminal animation">
-
-</div>
-''')
-
-section(39,"LET'S BUILD","#FF2BD6","🤝",
-        "COLLABORATION IS WHERE IDEAS GET STRONGER",
-r'''
-<div align="center">
-
-<a href="https://github.com/avinash9354"><img src="https://img.shields.io/badge/GITHUB-FFFFFF?style=for-the-badge&logo=github&logoColor=000000"></a>
-<a href="https://www.linkedin.com/in/avinashpandeyai/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=FFFFFF"></a>
-<a href="https://www.instagram.com/mr.avi_pandey/"><img src="https://img.shields.io/badge/INSTAGRAM-FF2BD6?style=for-the-badge&logo=instagram&logoColor=FFFFFF"></a>
-<a href="mailto:avinash9354@email.com"><img src="https://img.shields.io/badge/EMAIL-FF3D3D?style=for-the-badge&logo=gmail&logoColor=FFFFFF"></a>
-
-<br><br>
-
-<table width="90%">
-<tr>
-<td bgcolor="#10002B" align="center">
-
-### 💡 HAVE AN IDEA?
-
-Bring the problem.
-
-</td>
-<td bgcolor="#001F2E" align="center">
-
-### 🧠 HAVE A CHALLENGE?
-
-Bring the complexity.
-
-</td>
-<td bgcolor="#2B1000" align="center">
-
-### 🚀 HAVE A PRODUCT?
-
-Let's build it.
-
-</td>
-</tr>
-</table>
-
-</div>
-''')
-
-section(40,"FINAL TRANSMISSION","#FF7A00","🌠",
-        "THE SYSTEM NEVER STOPS",
-r'''
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=900&size=29&duration=2400&pause=700&color=00F5FF&center=true&vCenter=true&width=1050&height=75&lines=KEEP+BUILDING.;KEEP+LEARNING.;KEEP+QUESTIONING.;KEEP+CREATING.;THE+FUTURE+IS+STILL+LOADING...+%F0%9F%9A%80" alt="Final animation">
-
-<br><br>
-
-<table width="100%">
-<tr>
-<td bgcolor="#001F26" align="center">⚡<br><b>BUILD</b></td>
-<td bgcolor="#21002E" align="center">💜<br><b>CREATE</b></td>
-<td bgcolor="#241000" align="center">🔥<br><b>SHIP</b></td>
-<td bgcolor="#082414" align="center">🌱<br><b>LEARN</b></td>
-<td bgcolor="#10104A" align="center">🌌<br><b>IMAGINE</b></td>
-</tr>
-</table>
-
-<br>
-
-> ## **"The best technology is the technology that makes impossible things feel inevitable."**
-
-<br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&section=footer&color=0:020617,15:064E3B,30:0E7490,50:312E81,70:7E22CE,85:BE185D,100:10002B&animation=twinkling"/>
-
-### `SYSTEM STATUS: ONLINE ⚡  •  AI LAB: ACTIVE 🧠  •  FUTURE: LOADING 🚀`
-
-</div>
-''')
-
-# Add a visually rich front section and then the 40-page-equivalent portfolio.
-front = r'''<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=380&section=header&text=AVINASH%20PANDEY&fontSize=88&fontColor=FFFFFF&fontAlignY=39&desc=AI%20ENGINEER%20%E2%80%A2%20PRODUCT%20BUILDER%20%E2%80%A2%20SOFTWARE%20ARCHITECT&descSize=18&descAlignY=66&descColor=00F5FF&stroke=FF2BD6&strokeWidth=3&color=0:030014,15:071A3D,30:172554,45:312E81,60:701A75,75:BE185D,90:0E7490,100:020617&animation=twinkling"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=900&size=26&duration=2200&pause=500&color=00F5FF&center=true&vCenter=true&width=1100&height=70&lines=%F0%9F%8C%8C+WELCOME+TO+MY+DIGITAL+UNIVERSE;%F0%9F%A7%A0+AI+%7C+MOBILE+%7C+FULL+STACK+%7C+SYSTEMS;%F0%9F%9A%80+TURNING+IDEAS+INTO+REAL+PRODUCTS;%E2%9A%A1+BUILDING+WHAT+DOESN'T+EXIST+YET" alt="Animated welcome"/>
-
-<br>
-
-<img src="https://img.shields.io/badge/%E2%9A%A1%20AI%20LAB-00F5FF?style=for-the-badge&labelColor=080014">
-<img src="https://img.shields.io/badge/%F0%9F%92%9C%20CREATIVE%20MODE-FF2BD6?style=for-the-badge&labelColor=080014">
-<img src="https://img.shields.io/badge/%F0%9F%94%A5%20BUILDING-FF7A00?style=for-the-badge&labelColor=080014">
-<img src="https://img.shields.io/badge/%F0%9F%8C%B1%20LEARNING-22C55E?style=for-the-badge&labelColor=080014">
-
-<br><br>
-
-<img src="https://komarev.com/ghpvc/?username=avinash9354&style=for-the-badge&color=00F5FF&label=VISITORS">
-<img src="https://img.shields.io/github/followers/avinash9354?style=for-the-badge&color=FF2BD6&labelColor=10002B&label=FOLLOWERS">
-<img src="https://img.shields.io/github/stars/avinash9354?style=for-the-badge&color=FFB000&labelColor=211300&label=STARS">
-
-</div>
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=7&section=header&color=0:00F5FF,20:7C3AED,40:FF2BD6,60:FF7A00,80:22C55E,100:00F5FF"/>
-
-</div>
-
-> ### 🌈 **A colorful engineering portfolio — where AI, software, design and imagination meet.**
-
-'''
-
-readme = front + "\n".join(sections)
-
-# Add a compact contents block near the top.
-toc = r'''
-<div align="center">
-
-## 🧭 NAVIGATION MAP
-
-`01 Identity` · `02 Tech` · `03 AI` · `04 Mobile` · `05 Web` · `06 Backend` · `07 Systems` · `08 Security`  
-`09 Performance` · `10 Products` · `11 Projects` · `12 Research` · `13 GitHub` · `14 Roadmap` · `15 Connect`
+<img src="https://img.shields.io/badge/SwiftUI-ADVANCED-FF375F?style=for-the-badge&logo=swift&logoColor=white"/>
+<img src="https://img.shields.io/badge/CoreML-EXPLORING-ffffff?style=for-the-badge&logo=apple&logoColor=black"/>
+<img src="https://img.shields.io/badge/Deep%20Learning-RESEARCH-a78bfa?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/System%20Design-LEARNING-06b6d4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Cloud-ENGINEERING-22c55e?style=for-the-badge"/>
 
 </div>
 
 ---
 
+# 31 · `SKILL RADAR`
+
+```text
+AI / ML              ████████████████████░  92%
+Python               ███████████████████░░  88%
+Swift / SwiftUI      ██████████████████░░░  86%
+Flutter              █████████████████░░░░  82%
+Full Stack           █████████████████░░░░  82%
+Backend              ████████████████░░░░░  78%
+Computer Vision      ████████████████░░░░░  78%
+System Design        ██████████████░░░░░░░  70%
+DevOps               █████████████░░░░░░░░  66%
+```
+
+---
+
+# 32 · `TOOLBOX`
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,xcode,vscode,figma,postman,notion&theme=dark&perline=9"/>
+
+</div>
+
+---
+
+# 33 · `ARCHITECTURE PRINCIPLES`
+
+```text
+01  Keep boundaries clear.
+02  Make dependencies explicit.
+03  Prefer boring infrastructure when possible.
+04  Measure before optimizing.
+05  Design failure states.
+06  Treat security as a feature.
+07  Keep AI observable.
+08  Make systems replaceable.
+09  Automate repetitive work.
+10  Build for the next engineer too.
+```
+
+---
+
+# 34 · `PRODUCT DEVELOPMENT LOOP`
+
+```mermaid
+flowchart LR
+
+IDEA --> RESEARCH
+RESEARCH --> DESIGN
+DESIGN --> PROTOTYPE
+PROTOTYPE --> BUILD
+BUILD --> TEST
+TEST --> SHIP
+SHIP --> MEASURE
+MEASURE --> LEARN
+LEARN --> IDEA
+
+style IDEA fill:#020617,stroke:#67e8f9,color:#fff
+style BUILD fill:#020617,stroke:#a78bfa,color:#fff
+style SHIP fill:#020617,stroke:#22c55e,color:#fff
+style LEARN fill:#020617,stroke:#f97316,color:#fff
+```
+
+---
+
+# 35 · `PROJECT BLUEPRINT`
+
+Every serious project starts with:
+
+```text
+┌──────────────────────────────────────────┐
+│               PROJECT                    │
+├──────────────────────────────────────────┤
+│ Problem                                  │
+│ User                                     │
+│ Value Proposition                        │
+│ Architecture                             │
+│ Technology                               │
+│ Data                                     │
+│ Security                                 │
+│ AI / Automation                          │
+│ UX                                       │
+│ Testing                                  │
+│ Deployment                               │
+│ Monitoring                               │
+│ Scale                                    │
+└──────────────────────────────────────────┘
+```
+
+---
+
+# 36 · `FLAGSHIP PROJECT CARDS`
+
+## 🚀 Orbix Ecosystem
+
+An ambitious technology ecosystem exploring:
+
+- intelligent software
+- browser experiences
+- secure operating environments
+- AI-assisted workflows
+- developer tooling
+- scalable infrastructure
+
+---
+
+## 🌌 SkyAI
+
+A concept around AI-powered travel and intelligent trip experiences.
+
+Potential layers:
+
+```text
+Travel Search
+     ↓
+Recommendation Engine
+     ↓
+AI Assistant
+     ↓
+Itinerary
+     ↓
+Booking
+     ↓
+Payments
+     ↓
+Post-Trip Intelligence
+```
+
+---
+
+## 💬 AI Assistant Platforms
+
+Focus:
+
+- conversational UI
+- context
+- tool calling
+- memory
+- personalization
+- multimodal interaction
+- streaming
+- intelligent workflows
+
+---
+
+## 🛰️ Satellite AI
+
+Research direction:
+
+```text
+Remote Sensing
+     +
+Computer Vision
+     +
+Generative Models
+     =
+Intelligent Earth Observation
+```
+
+---
+
+# 37 · `APP ARCHITECTURE PATTERN`
+
+```text
+┌──────────────────────────────┐
+│            UI                │
+├──────────────────────────────┤
+│         View Model           │
+├──────────────────────────────┤
+│          Domain              │
+├──────────────────────────────┤
+│           Data               │
+├──────────────────────────────┤
+│       Infrastructure         │
+└──────────────────────────────┘
+```
+
+Benefits:
+
+- easier testing
+- cleaner features
+- replaceable APIs
+- maintainable code
+- scalable teams
+
+---
+
+# 38 · `API ENGINEERING`
+
+### Request lifecycle
+
+```text
+HTTP Request
+    ↓
+Router
+    ↓
+Middleware
+    ↓
+Validation
+    ↓
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+Database
+    ↓
+Serializer
+    ↓
+HTTP Response
+```
+
+---
+
+# 39 · `OBSERVABILITY`
+
+A production system should answer:
+
+```text
+What happened?
+When did it happen?
+Where did it happen?
+Why did it happen?
+How many users were affected?
+How long did it take?
+Did it recover?
+```
+
+Observability:
+
+- logs
+- metrics
+- traces
+- alerts
+- dashboards
+
+---
+
+# 40 · `SCALABILITY`
+
+```text
+1 USER
+   ↓
+10 USERS
+   ↓
+1K USERS
+   ↓
+100K USERS
+   ↓
+1M USERS
+```
+
+The architecture must evolve.
+
+### Scale levers
+
+- caching
+- queues
+- horizontal scaling
+- database indexes
+- read replicas
+- asynchronous processing
+- CDN
+- model optimization
+- load balancing
+
+---
+
+# 41 · `AI SCALABILITY`
+
+```text
+MODEL
+ ↓
+OPTIMIZATION
+ ↓
+BATCHING
+ ↓
+CACHING
+ ↓
+QUEUE
+ ↓
+WORKERS
+ ↓
+GPU POOL
+ ↓
+AUTOSCALING
+```
+
+---
+
+# 42 · `MOBILE PERFORMANCE`
+
+### Performance targets
+
+```text
+Fast launch
+     ↓
+Smooth navigation
+     ↓
+Efficient rendering
+     ↓
+Minimal network waits
+     ↓
+Smart caching
+     ↓
+Efficient AI inference
+     ↓
+Battery awareness
+```
+
+---
+
+# 43 · `DESIGN SYSTEM`
+
+### UI tokens
+
+```text
+COLOR
+├── Background
+├── Surface
+├── Primary
+├── Accent
+└── Danger
+
+TYPE
+├── Display
+├── Heading
+├── Body
+└── Caption
+
+MOTION
+├── Enter
+├── Exit
+├── Transition
+└── Feedback
+
+SPACING
+├── XS
+├── SM
+├── MD
+├── LG
+└── XL
+```
+
+---
+
+# 44 · `ANIMATION LAB`
+
+Animations I like:
+
+- spring transitions
+- staggered entrance
+- shared-element motion
+- scroll-based motion
+- particle effects
+- subtle parallax
+- loading skeletons
+- state transitions
+- micro-interactions
+
+Rule:
+
+> **Motion should explain what changed.**
+
+---
+
+# 45 · `GITHUB TELEMETRY`
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=avinash9354&bg_color=020617&color=67e8f9&line=6366f1&point=f97316&area=true&hide_border=true&custom_title=AVINASH%20ENGINEERING%20TELEMETRY" width="100%"/>
+
+<br/><br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=avinash9354&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%"/>
+
+</div>
+
+---
+
+# 46 · `CONTRIBUTION ENGINE`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/avinash9354/avinash9354/output/github-snake-dark.svg" width="100%" alt="GitHub contribution snake"/>
+
+</div>
+
+---
+
+# 47 · `LANGUAGE TELEMETRY`
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=avinash9354&layout=donut-vertical&hide_border=true&bg_color=020617&title_color=67e8f9&text_color=e2e8f0&langs_count=10"/>
+
+</div>
+
+---
+
+# 48 · `CODING PHILOSOPHY`
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  CODE SHOULD BE                                               │
+│                                                              │
+│       SIMPLE                                                  │
+│         ↓                                                    │
+│       READABLE                                                │
+│         ↓                                                    │
+│       TESTABLE                                                │
+│         ↓                                                    │
+│       OBSERVABLE                                              │
+│         ↓                                                    │
+│       SCALABLE                                                │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 49 · `FAILURE PHILOSOPHY`
+
+Failure isn't the opposite of progress.
+
+```text
+TRY
+ ↓
+FAIL
+ ↓
+OBSERVE
+ ↓
+UNDERSTAND
+ ↓
+CHANGE
+ ↓
+TRY AGAIN
+```
+
+Every failed prototype is information.
+
+---
+
+# 50 · `LEARNING STACK`
+
+```text
+FOUNDATION
+├── Mathematics
+├── Algorithms
+├── Data Structures
+└── Computer Science
+
+ENGINEERING
+├── Architecture
+├── APIs
+├── Databases
+├── Networking
+└── Security
+
+INTELLIGENCE
+├── Machine Learning
+├── Deep Learning
+├── Computer Vision
+├── Generative AI
+└── Model Deployment
+
+PRODUCT
+├── UX
+├── Design
+├── Analytics
+├── Growth
+└── Business
+```
+
+---
+
+# 51 · `ROADMAP`
+
+## Phase I — Foundation
+
+- strengthen CS fundamentals
+- algorithms
+- system design
+- software architecture
+- advanced programming
+
+## Phase II — AI
+
+- deep learning
+- computer vision
+- generative AI
+- model deployment
+- on-device inference
+
+## Phase III — Product
+
+- intelligent mobile apps
+- AI assistants
+- computer vision products
+- scalable backend systems
+
+## Phase IV — Infrastructure
+
+- distributed systems
+- cloud architecture
+- GPU infrastructure
+- observability
+- high-scale systems
+
+## Phase V — Innovation
+
+- original research
+- open-source projects
+- new product ideas
+- large-scale AI systems
+
+---
+
+# 52 · `2026 → FUTURE`
+
+```text
+2026
+ │
+ ├── AI Applications
+ ├── Advanced iOS
+ ├── Flutter
+ ├── ML Systems
+ └── Product Engineering
+       │
+       ▼
+2027
+ │
+ ├── Advanced AI
+ ├── System Design
+ ├── Cloud
+ ├── Research
+ └── Large-scale products
+       │
+       ▼
+2030+
+ │
+ └── Build technology that changes industries.
+```
+
+---
+
+# 53 · `WHAT I'M BUILDING TOWARD`
+
+### 🎯 Long-Term Vision
+
+```text
+AI
+ +
+SOFTWARE ENGINEERING
+ +
+PRODUCT DESIGN
+ +
+SYSTEM ARCHITECTURE
+ +
+RESEARCH
+ =
+TECHNOLOGY PRODUCTS
+```
+
+The destination isn't a specific programming language.
+
+The destination is:
+
+> **Being able to take a difficult problem and build the entire solution.**
+
+---
+
+# 54 · `ENGINEERING CHECKLIST`
+
+Before shipping:
+
+```text
+[ ] Does the feature solve the actual problem?
+[ ] Is the UX understandable?
+[ ] Are loading states handled?
+[ ] Are errors handled?
+[ ] Is the data secure?
+[ ] Is the API reliable?
+[ ] Is the database indexed?
+[ ] Is performance acceptable?
+[ ] Is the system observable?
+[ ] Can another engineer maintain it?
+[ ] Can it scale?
+[ ] Can it be tested?
+```
+
+---
+
+# 55 · `AI PRODUCT CHECKLIST`
+
+```text
+[ ] Model quality
+[ ] Latency
+[ ] Cost
+[ ] Privacy
+[ ] Hallucination handling
+[ ] Context management
+[ ] Prompt robustness
+[ ] Evaluation
+[ ] Monitoring
+[ ] Fallback behavior
+[ ] User feedback
+[ ] Continuous improvement
+```
+
+---
+
+# 56 · `WHY I BUILD`
+
+I like the moment when:
+
+```text
+       IDEA
+        │
+        ▼
+     NOTHING
+        │
+        ▼
+      CODE
+        │
+        ▼
+    PROTOTYPE
+        │
+        ▼
+     PRODUCT
+        │
+        ▼
+      USERS
+        │
+        ▼
+      IMPACT
+```
+
+That transformation is what keeps me building.
+
+---
+
+# 57 · `BEYOND CODE`
+
+Technology is not only about writing code.
+
+It is also about:
+
+- asking better questions
+- understanding users
+- designing systems
+- communicating ideas
+- making trade-offs
+- learning from failure
+- thinking long-term
+
+---
+
+# 58 · `COLLABORATION`
+
+I enjoy collaborating around:
+
+```text
+AI
+├── Applied ML
+├── Generative AI
+└── Computer Vision
+
+Mobile
+├── iOS
+└── Flutter
+
+Engineering
+├── Backend
+├── Cloud
+└── Architecture
+
+Products
+├── Startups
+├── Experiments
+└── Open Source
+```
+
+---
+
+# 59 · `OPEN SOURCE MISSION`
+
+```text
+BUILD
+ ↓
+DOCUMENT
+ ↓
+SHARE
+ ↓
+GET FEEDBACK
+ ↓
+IMPROVE
+ ↓
+HELP OTHERS
+ ↓
+BUILD AGAIN
+```
+
+---
+
+# 60 · `PROFILE COMMAND CENTER`
+
+<div align="center">
+
+| COMMAND | PURPOSE |
+|---|---|
+| 🧠 AI | Artificial Intelligence |
+| 📱 MOBILE | iOS + Flutter |
+| 🌐 WEB | Full Stack |
+| ⚙️ SYSTEMS | Architecture |
+| 🔬 LAB | Research |
+| 🚀 PRODUCTS | Product Engineering |
+| ☁️ CLOUD | Infrastructure |
+| 🛠️ TOOLS | Developer Workflow |
+
+</div>
+
+---
+
+# 61 · `CURRENT PROJECT RADAR`
+
+```text
+                         ┌───────────────┐
+                         │   AI APPS     │
+                         └───────┬───────┘
+                                 │
+             ┌───────────────────┼──────────────────┐
+             ▼                   ▼                  ▼
+       ┌───────────┐       ┌───────────┐      ┌───────────┐
+       │   iOS     │       │   FLUTTER │      │   WEB     │
+       └─────┬─────┘       └─────┬─────┘      └─────┬─────┘
+             │                   │                  │
+             └───────────────────┼──────────────────┘
+                                 ▼
+                         ┌───────────────┐
+                         │   AI CORE     │
+                         └───────────────┘
+```
+
+---
+
+# 62 · `ENGINEERING VALUES`
+
+### Curiosity
+
+Never stop asking why.
+
+### Ownership
+
+If I build it, I understand it.
+
+### Simplicity
+
+Complex systems should feel simple to users.
+
+### Reliability
+
+A feature isn't finished until failure is considered.
+
+### Growth
+
+Every project should teach something.
+
+### Impact
+
+Technology matters when people can use it.
+
+---
+
+# 63 · `TERMINAL`
+
+```bash
+$ whoami
+avinash-pandey
+
+$ focus
+AI + Software Engineering
+
+$ stack
+Swift Python Dart TypeScript Java React Node Flutter PyTorch
+
+$ mission
+Build intelligent products.
+
+$ status
+██████████████████████████████████████ ONLINE
+
+$ next
+Create something impossible.
+```
+
+---
+
+# 64 · `SIGNAL`
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/AI-ONLINE-67e8f9?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/BUILD-ONLINE-22c55e?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/RESEARCH-ACTIVE-a78bfa?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/IDEAS-INFINITE-f97316?style=for-the-badge&labelColor=020617"/>
+
+</div>
+
+---
+
+# 65 · `CONNECT`
+
+<div align="center">
+
+<a href="https://github.com/avinash9354">
+<img src="https://img.shields.io/badge/GitHub-020617?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/avinashpandeyai/">
+<img src="https://img.shields.io/badge/LinkedIn-020617?style=for-the-badge&logo=linkedin&logoColor=38bdf8"/>
+</a>
+
+<a href="https://www.instagram.com/mr.avi_pandey/">
+<img src="https://img.shields.io/badge/Instagram-020617?style=for-the-badge&logo=instagram&logoColor=f472b6"/>
+</a>
+
+<a href="mailto:avinash9354@email.com">
+<img src="https://img.shields.io/badge/Email-020617?style=for-the-badge&logo=gmail&logoColor=f87171"/>
+</a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/LET'S%20BUILD-SOMETHING%20EXTRAORDINARY-06b6d4?style=for-the-badge"/>
+
+</div>
+
+---
+
+# 66 · `FINAL MESSAGE`
+
+<div align="center">
+
+```text
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║                    KEEP BUILDING.                            ║
+║                                                              ║
+║             KEEP LEARNING.                                   ║
+║                                                              ║
+║             KEEP QUESTIONING.                                ║
+║                                                              ║
+║             KEEP CREATING.                                   ║
+║                                                              ║
+║       The future belongs to people who build it.             ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+<br/>
+
+### ⚡ AI · MOBILE · SOFTWARE · SYSTEMS · INNOVATION
+
+**Built with curiosity. Engineered with purpose.**
+
+</div>
+
+---
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&section=footer&color=0:020617,25:164e63,50:312e81,75:0f172a,100:020617&animation=twinkling"/>
+
+</div>
 '''
-readme = readme.replace("> ### 🌈 **A colorful engineering portfolio — where AI, software, design and imagination meet.**\n", 
-                        "> ### 🌈 **A colorful engineering portfolio — where AI, software, design and imagination meet.**\n\n" + toc, 1)
 
-p.write_text(readme, encoding="utf-8")
+path = Path("/mnt/data/README.md")
+path.write_text(readme, encoding="utf-8")
 
-print("Created colorful 40-section README")
-print("Sections:", len(sections))
-print("Lines:", len(readme.splitlines()))
-print("Characters:", len(readme))
-print("File:", p)
+print(f"Created {path}")
+print(f"Characters: {len(readme):,}")
+print(f"Lines: {len(readme.splitlines()):,}")
+print(f"Sections: {sum(1 for line in readme.splitlines() if line.startswith('# '))}")
