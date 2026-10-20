@@ -1,1069 +1,414 @@
 from pathlib import Path
+import re
 
-readme = r'''<div align="center">
+source = Path("/mnt/data/Pasted text(20261020-180703).txt")
+raw = source.read_text(encoding="utf-8")
 
-<!-- ============================================================= -->
-<!--                     AVINASH PANDEY                            -->
-<!--              CINEMATIC AI ENGINEERING PROFILE                 -->
-<!-- ============================================================= -->
+match = re.search(r"readme\s*=\s*r'''(.*?)'''\s*\n", raw, flags=re.S)
+if not match:
+    raise ValueError("Could not safely extract the README content from the supplied file.")
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=320&section=header&text=AVINASH%20PANDEY&fontSize=82&fontColor=ffffff&fontAlignY=36&desc=AI%20ENGINEER%20%7C%20MOBILE%20ARCHITECT%20%7C%20FULL%20STACK%20BUILDER&descSize=19&descAlignY=58&descColor=67e8f9&color=0:020617,20:0f172a,45:1e1b4b,70:164e63,100:020617&animation=twinkling"/>
+readme = match.group(1).strip()
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=24&duration=2600&pause=650&color=67E8F9&center=true&vCenter=true&width=1000&height=65&lines=BOOTING+AVINASH.OS...+%E2%9C%93;AI+ENGINEERING+MODE%3A+ACTIVE+%F0%9F%A7%A0;BUILDING+PRODUCTS+THAT+DIDN'T+EXIST+YET+%F0%9F%9A%80;SWIFTUI+%2B+FLUTTER+%2B+PYTHON+%2B+FULL+STACK;RESEARCH+%E2%86%92+ENGINEERING+%E2%86%92+REAL+WORLD+IMPACT"/>
+# Add comprehensive engineering sections before the closing profile message.
+insert_at = readme.find("# 66 · `FINAL MESSAGE`")
+if insert_at == -1:
+    insert_at = len(readme)
 
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=avinash9354&style=for-the-badge&color=06b6d4&label=PROFILE%20SIGNALS"/>
-<img src="https://img.shields.io/github/followers/avinash9354?style=for-the-badge&label=NETWORK&color=6366f1&labelColor=020617"/>
-<img src="https://img.shields.io/badge/STATUS-BUILDING%20AI-22c55e?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/MODE-INNOVATION-f97316?style=for-the-badge&labelColor=020617"/>
-
-<br/><br/>
-
-> **"I don't just use technology. I build systems that make technology feel invisible."**
-
-</div>
-
+extra = r'''
 ---
 
-# 00 · `BOOT SEQUENCE`
-
-```text
-╔══════════════════════════════════════════════════════════════════════╗
-║                        AVINASH.OS :: BOOT                            ║
-╠══════════════════════════════════════════════════════════════════════╣
-║                                                                      ║
-║  [✓] Identity Kernel ..................................... ONLINE   ║
-║  [✓] AI Research Engine .................................. ONLINE   ║
-║  [✓] iOS Engineering Stack ............................... ONLINE   ║
-║  [✓] Flutter Runtime ..................................... ONLINE   ║
-║  [✓] Full-Stack Services .................................. ONLINE   ║
-║  [✓] Product Architecture .................................. ONLINE  ║
-║  [✓] Creative Engine ...................................... ONLINE   ║
-║                                                                      ║
-║  SYSTEM TARGET:                                                     ║
-║                                                                      ║
-║  Build → Ship → Measure → Learn → Rebuild → Scale                   ║
-║                                                                      ║
-║  CURRENT MISSION:                                                   ║
-║  Turn ambitious ideas into intelligent, production-grade products. ║
-║                                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
----
-
-# 01 · `IDENTITY`
-
-<table>
-<tr>
-<td width="55%" valign="top">
-
-## 👋 Hello, I'm Avinash
-
-I'm an **AI-focused software engineer and product builder** interested in the intersection of:
-
-- 🤖 Artificial Intelligence
-- 🧠 Machine Learning
-- 📱 iOS Engineering
-- 🦋 Flutter Development
-- 🌐 Full-Stack Systems
-- 🏗️ Software Architecture
-- ☁️ Cloud & Deployment
-- 🎨 Product Experience
-- 🔬 Applied Research
-
-My goal is simple:
-
-> **Take an idea from a blank screen to a real product.**
-
-I enjoy working across the entire stack instead of living inside one layer.
-
-</td>
-
-<td width="45%" align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=avinash9354&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=020617&title_color=67e8f9&icon_color=a78bfa&text_color=e2e8f0"/>
-
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=avinash9354&hide_border=true&background=020617&stroke=312e81&ring=67e8f9&fire=f97316&currStreakLabel=67e8f9&sideLabels=e2e8f0&dates=94a3b8"/>
-
-</td>
-</tr>
-</table>
-
----
-
-# 02 · `WHOAMI`
-
-```yaml
-profile:
-  name: "Avinash Pandey"
-  location: "India 🇮🇳"
-  identity:
-    - "AI Developer"
-    - "iOS Developer"
-    - "Flutter Developer"
-    - "Full Stack Developer"
-    - "ML Explorer"
-
-mission:
-  statement: >
-    Build intelligent software products that solve meaningful problems
-    while delivering exceptional user experiences.
-
-interests:
-  artificial_intelligence: true
-  machine_learning: true
-  mobile_engineering: true
-  software_architecture: true
-  product_engineering: true
-  open_source: true
-
-engineering_style:
-  thinking: "systems-first"
-  building: "prototype → validate → production"
-  priority: "performance + reliability + experience"
-  mindset: "learn by building"
-
-current_mode:
-  status: "BUILDING"
-  energy: "HIGH"
-  curiosity: "UNLIMITED"
-```
-
----
-
-# 03 · `ENGINEERING DNA`
+# 66 · `OPERATING SYSTEM ENGINEERING`
 
 <div align="center">
 
-| DIMENSION | MY APPROACH |
+<img src="https://img.shields.io/badge/OS%20ENGINEERING-KERNEL%20%7C%20RUNTIME-7c3aed?style=for-the-badge&logo=linux&logoColor=white"/>
+<img src="https://img.shields.io/badge/SYSTEMS-C%20%7C%20C%2B%2B%20%7C%20RUST-f97316?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/FOCUS-LOW--LEVEL%20ENGINEERING-06b6d4?style=for-the-badge"/>
+
+</div>
+
+Operating-system engineering spans hardware interfaces, privileged execution, memory, scheduling, storage, security boundaries, and user-space services. This section maps the technologies and concepts I study and use when building systems-oriented projects.
+
+### OS development stack
+
+| Layer | Concepts and technologies |
 |---|---|
-| 🧠 Thinking | Systems over isolated features |
-| 🔬 Learning | Build real projects |
-| 🎨 Design | Simple, intentional interfaces |
-| ⚡ Performance | Optimize where it matters |
-| 🔐 Security | Design security into architecture |
-| 🤖 AI | Useful intelligence over hype |
-| 📱 Mobile | Native-quality experiences |
-| 🌐 Web | Scalable and maintainable systems |
-| 🧪 Testing | Validate assumptions early |
-| 🚀 Shipping | Working software beats perfect plans |
-
-</div>
-
----
-
-# 04 · `THE TECHNOLOGY CONSTELLATION`
-
-<div align="center">
-
-### Languages
-
-<img src="https://skillicons.dev/icons?i=swift,python,dart,typescript,javascript,java,cpp,c&theme=dark&perline=8"/>
-
-### Frontend
-
-<img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind,threejs&theme=dark&perline=8"/>
-
-### Backend
-
-<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,spring&theme=dark&perline=8"/>
-
-### Mobile
-
-<img src="https://skillicons.dev/icons?i=swift,flutter,androidstudio&theme=dark&perline=8"/>
-
-### AI / ML
-
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,python,opencv&theme=dark&perline=8"/>
-
-### Databases
-
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,firebase,redis&theme=dark&perline=8"/>
-
-### DevOps / Cloud
-
-<img src="https://skillicons.dev/icons?i=docker,githubactions,linux,vercel,git&theme=dark&perline=8"/>
-
-### Developer Tools
-
-<img src="https://skillicons.dev/icons?i=xcode,vscode,figma,github,git&theme=dark&perline=8"/>
-
-</div>
-
----
-
-# 05 · `LANGUAGE MATRIX`
-
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│                    LANGUAGE ENGINEERING MAP                     │
-├──────────────────────┬──────────────────────┬───────────────────┤
-│ Swift                │ ██████████████████░░ │ Mobile            │
-│ Python               │ ███████████████████░ │ AI / ML           │
-│ TypeScript           │ █████████████████░░░ │ Full Stack        │
-│ Dart                 │ ████████████████░░░░ │ Flutter           │
-│ JavaScript           │ ████████████████░░░░ │ Web               │
-│ Java                 │ █████████████░░░░░░░ │ Backend            │
-│ C++                  │ ███████████░░░░░░░░░ │ Systems / DSA      │
-│ C                    │ ██████████░░░░░░░░░░ │ Fundamentals       │
-└──────────────────────┴──────────────────────┴───────────────────┘
-```
-
----
-
-# 06 · `AI LAB`
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/AI%20LAB-ACTIVE-67e8f9?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/DEEP%20LEARNING-RESEARCH-a78bfa?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/COMPUTER%20VISION-EXPLORING-22c55e?style=for-the-badge&labelColor=020617"/>
-
-</div>
-
-## 🧠 Areas of Exploration
-
-```text
-                    ┌────────────────────┐
-                    │    AI APPLICATION   │
-                    └─────────┬──────────┘
-                              │
-          ┌───────────────────┼───────────────────┐
-          ▼                   ▼                   ▼
-   ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-   │  GENERATIVE │     │ COMPUTER    │     │  PREDICTIVE │
-   │     AI      │     │   VISION    │     │     ML      │
-   └──────┬──────┘     └──────┬──────┘     └──────┬──────┘
-          │                   │                   │
-          ▼                   ▼                   ▼
-       LLMs               CNNs              Regression
-       Agents             Detection         Classification
-       RAG                Restoration       Forecasting
-       Prompting          Segmentation      Optimization
-```
-
-### Current AI Interests
-
-- Neural network architectures
-- Computer vision
-- Image enhancement
-- Generative AI
-- LLM-powered applications
-- On-device inference
-- CoreML optimization
-- Model compression
-- AI product engineering
-- Real-time inference pipelines
-
----
-
-# 07 · `AI ENGINEERING PIPELINE`
-
-```mermaid
-flowchart TD
-
-A[Problem] --> B[Dataset]
-B --> C[Exploration]
-C --> D[Preprocessing]
-D --> E[Model Design]
-E --> F[Training]
-F --> G[Evaluation]
-G --> H{Good Enough?}
-
-H -- No --> I[Experiment]
-I --> E
-
-H -- Yes --> J[Optimization]
-J --> K[Export]
-K --> L[API / CoreML]
-L --> M[Product]
-M --> N[Monitoring]
-N --> I
-
-style A fill:#020617,stroke:#67e8f9,color:#fff
-style E fill:#020617,stroke:#a78bfa,color:#fff
-style J fill:#020617,stroke:#f97316,color:#fff
-style M fill:#020617,stroke:#22c55e,color:#fff
-```
-
----
-
-# 08 · `MOBILE ENGINEERING`
-
-## 🍎 iOS
-
-My iOS engineering interests include:
-
-- Swift
-- SwiftUI
-- UIKit
-- CoreML
-- Core Data
-- Networking
-- Concurrency
-- MVVM
-- Modular architecture
-- App performance
-- Accessibility
-- Animation
-- API integration
-
-### iOS Philosophy
-
-```text
-UI
- ↓
-Presentation
- ↓
-Domain
- ↓
-Data
- ↓
-Infrastructure
- ↓
-External Services
-```
-
-The objective:
-
-> **Keep features independent, testable and scalable.**
-
----
-
-# 09 · `FLUTTER ENGINEERING`
-
-```text
-Flutter Application
-        │
-        ├── Presentation
-        │      ├── Widgets
-        │      ├── Animations
-        │      └── Themes
-        │
-        ├── State
-        │      ├── Riverpod
-        │      └── Reactive State
-        │
-        ├── Domain
-        │      ├── Use Cases
-        │      └── Entities
-        │
-        ├── Data
-        │      ├── APIs
-        │      ├── Firebase
-        │      └── Local Storage
-        │
-        └── AI
-               ├── On-device models
-               ├── Image processing
-               └── Intelligent features
-```
-
----
-
-# 10 · `FULL STACK ARCHITECTURE`
-
-```mermaid
-flowchart LR
-
-CLIENT[Web / iOS / Android] --> EDGE[Edge / CDN]
-EDGE --> GATEWAY[API Gateway]
-
-GATEWAY --> AUTH[Authentication]
-GATEWAY --> SERVICE[Application Services]
-
-SERVICE --> DB[(PostgreSQL)]
-SERVICE --> NOSQL[(MongoDB)]
-SERVICE --> CACHE[(Redis)]
-
-SERVICE --> AI[AI Service]
-AI --> MODEL[Model Runtime]
-
-SERVICE --> STORAGE[Object Storage]
-
-SERVICE --> QUEUE[Job Queue]
-QUEUE --> WORKER[Workers]
-
-WORKER --> AI
-
-style CLIENT fill:#020617,stroke:#67e8f9,color:#fff
-style AI fill:#020617,stroke:#a78bfa,color:#fff
-style DB fill:#020617,stroke:#22c55e,color:#fff
-style MODEL fill:#020617,stroke:#f97316,color:#fff
-```
-
----
-
-# 11 · `BACKEND MINDSET`
-
-### API Design
-
-```text
-REQUEST
-   ↓
-Validation
-   ↓
-Authentication
-   ↓
-Authorization
-   ↓
-Business Logic
-   ↓
-Persistence
-   ↓
-Response
-   ↓
-Observability
-```
-
-### Backend Priorities
-
-- predictable APIs
-- strong validation
-- clean error handling
-- authentication
-- authorization
-- caching
-- database indexing
-- observability
-- rate limiting
-- graceful failures
-
----
-
-# 12 · `DATABASE LAB`
-
-<div align="center">
-
-| DATABASE | USE CASE |
-|---|---|
-| PostgreSQL | Relational systems |
-| MongoDB | Document-oriented systems |
-| Firebase | Rapid product development |
-| Redis | Cache / queues / fast state |
-| MySQL | Relational workloads |
-
-</div>
-
-### Data Engineering Principle
-
-```text
-Fast queries are designed,
-not hoped for.
-
-Schema
-  ↓
-Indexes
-  ↓
-Query plan
-  ↓
-Cache
-  ↓
-Observability
-```
-
----
-
-# 13 · `DEVOPS ENGINE`
-
-```text
-Developer
-    │
-    ▼
-Git Commit
-    │
-    ▼
-Pull Request
-    │
-    ▼
-Automated Checks
-    │
-    ├── Lint
-    ├── Test
-    ├── Build
-    └── Security
-    │
-    ▼
-Container
-    │
-    ▼
-Deployment
-    │
-    ▼
-Monitoring
-```
-
-### Tools
-
-- Git
-- GitHub
-- GitHub Actions
-- Docker
-- Linux
-- Vercel
-- Render
-- Cloud infrastructure
-- CI/CD pipelines
-
----
-
-# 14 · `PROJECT GALAXY`
-
-## ✈️ Flight Booking iOS
-
-**Category:** FinTech / Travel / Mobile
-
-```text
-SEARCH
-  ↓
-FLIGHTS
-  ↓
-FILTER
-  ↓
-DETAILS
-  ↓
-PASSENGERS
-  ↓
-PAYMENT
-  ↓
-CONFIRMATION
-  ↓
-TICKET
-```
-
-### Engineering Focus
-
-- SwiftUI interface
-- booking state management
-- API integration
-- payment architecture
-- passenger data
-- ticket generation
-- error states
-- loading states
-- responsive UX
-
----
-
-## 🤖 AI Conversational Application
-
-**Category:** Generative AI
-
-```text
-USER
- ↓
-PROMPT
- ↓
-CONTEXT
- ↓
-AI SERVICE
- ↓
-MODEL
- ↓
-STREAM
- ↓
-UI
-```
-
-### Product Goals
-
-- fast response rendering
-- conversational UX
-- streaming responses
-- conversation history
-- intelligent context
-- clean mobile interface
-
----
-
-## 🎨 AI Photo Editor
-
-**Category:** Computer Vision
-
-```text
-PHOTO
- ↓
-PREPROCESS
- ↓
-MODEL
- ↓
-INFERENCE
- ↓
-POSTPROCESS
- ↓
-RESULT
-```
-
-Potential capabilities:
-
-- denoise
-- enhancement
-- restoration
-- upscaling
-- color improvement
-- intelligent cropping
-- on-device processing
-
----
-
-## 🛰️ Satellite Image Reconstruction
-
-**Category:** Generative AI / Earth Observation
-
-```text
-Satellite Image
-       ↓
-Cloud Detection
-       ↓
-Cloud Mask
-       ↓
-Context Extraction
-       ↓
-Reconstruction Model
-       ↓
-Enhancement
-       ↓
-Quality Evaluation
-       ↓
-Restored Image
-```
-
----
-
-# 15 · `PRODUCT ENGINEERING`
-
-I don't think only in terms of features.
-
-I think in terms of:
-
-```text
-Problem
- ↓
-User
- ↓
-Experience
- ↓
-System
- ↓
-Data
- ↓
-AI
- ↓
-Infrastructure
- ↓
-Business
- ↓
-Scale
-```
-
-A good product isn't only technically impressive.
-
-It should also be:
-
-- understandable
-- reliable
-- fast
-- useful
-- maintainable
-- measurable
-
----
-
-# 16 · `UI / UX ENGINE`
-
-### Design Principles
-
-```text
-LESS NOISE
-    ↓
-CLEAR HIERARCHY
-    ↓
-FAST FEEDBACK
-    ↓
-INTENTIONAL MOTION
-    ↓
-ACCESSIBLE INTERACTION
-```
-
-### Animation Philosophy
-
-Animation should communicate:
-
-- state
-- hierarchy
-- transition
-- feedback
-- personality
-
-Not simply exist because it can.
-
----
-
-# 17 · `SYSTEM DESIGN`
+| Boot process | BIOS/UEFI, bootloaders, GRUB, UEFI applications, boot protocols |
+| Kernel foundations | C, C++, Rust, assembly (x86-64, ARM64), linker scripts, cross-compilers |
+| CPU and interrupts | privilege rings, exceptions, interrupt descriptor tables, APIC, context switching |
+| Memory management | virtual memory, paging, page tables, allocators, heaps, memory-mapped I/O |
+| Processes and threads | scheduling, context switches, synchronization, IPC, signals, system calls |
+| Drivers | PCI/PCIe, USB, storage, input, display, network interfaces, device trees |
+| Storage and filesystems | block devices, VFS, FAT, ext-family concepts, journaling, permissions |
+| Networking | Ethernet, sockets, TCP/IP, routing, packet buffers, network drivers |
+| User space | C runtime, shell, utilities, daemons, init systems, service management |
+| Build and debug | Make, CMake, Ninja, LLVM/Clang, GCC, GDB, LLDB, QEMU, Bochs |
+| Testing | unit tests, integration tests, kernel tests, emulation, fuzzing, crash dumps |
+| Virtualization | QEMU/KVM, Hyper-V concepts, VirtualBox, containers, hardware-assisted virtualization |
+
+### OS architecture map
 
 ```mermaid
 flowchart TB
-
-USER[User]
-API[API Gateway]
-AUTH[Auth Service]
-CORE[Core Service]
-AI[AI Service]
-DB[(Primary DB)]
-CACHE[(Redis)]
-QUEUE[Queue]
-WORKER[Worker]
-OBS[Observability]
-
-USER --> API
-API --> AUTH
-API --> CORE
-CORE --> DB
-CORE --> CACHE
-CORE --> AI
-CORE --> QUEUE
-QUEUE --> WORKER
-WORKER --> AI
-
-API --> OBS
-CORE --> OBS
-AI --> OBS
-
-style USER fill:#020617,stroke:#67e8f9,color:#fff
-style AI fill:#020617,stroke:#a78bfa,color:#fff
-style DB fill:#020617,stroke:#22c55e,color:#fff
-style OBS fill:#020617,stroke:#f97316,color:#fff
+    APP[Applications / CLI / GUI] --> ABI[System Libraries and ABI]
+    ABI --> SYSCALL[System Call Interface]
+    SYSCALL --> KERNEL[Kernel Core]
+    KERNEL --> SCHED[Scheduler and IPC]
+    KERNEL --> MEM[Virtual Memory]
+    KERNEL --> FS[VFS and Filesystems]
+    KERNEL --> NET[Network Stack]
+    KERNEL --> DRV[Device Drivers]
+    SCHED --> HW[CPU / RAM / Devices]
+    MEM --> HW
+    FS --> HW
+    NET --> HW
+    DRV --> HW
 ```
 
----
+### Advanced OS topics
 
-# 18 · `SECURITY FIRST`
+- Kernel/user-mode isolation, syscall ABI design, capabilities, permissions and privilege separation
+- SMP and multicore scheduling, locks, atomics, race conditions, deadlocks and memory ordering
+- Page faults, copy-on-write, memory-mapped files, shared memory and allocator design
+- Interrupt handling, DMA, IOMMU concepts, device discovery and driver lifecycle
+- Secure boot, measured boot, kernel hardening, signed modules and trusted update paths
+- Containers, namespaces, cgroups, seccomp, virtual machines and hypervisor boundaries
+- Crash analysis, core dumps, tracing, profiling, reproducible builds and supply-chain integrity
 
-Security belongs inside the architecture.
-
-### Security Checklist
-
-```text
-[✓] Authentication
-[✓] Authorization
-[✓] Input validation
-[✓] Secret management
-[✓] Encryption
-[✓] Rate limiting
-[✓] Secure storage
-[✓] Dependency updates
-[✓] Logging
-[✓] Monitoring
-[✓] Least privilege
-```
+> **Project direction:** Build a small educational kernel in an emulator, document the boot-to-shell path, add memory management and a basic scheduler incrementally, and publish tests and architecture notes. A project is evidence of skill; a technology list alone is not.
 
 ---
 
-# 19 · `PERFORMANCE LAB`
-
-### Optimization Layers
-
-```text
-UI
- ↓
-Network
- ↓
-API
- ↓
-Database
- ↓
-Cache
- ↓
-Compute
- ↓
-Model
-```
-
-### Performance Questions
-
-- What is the latency budget?
-- What can be cached?
-- What can be parallelized?
-- What should be asynchronous?
-- What belongs on-device?
-- What belongs server-side?
-- Where is the bottleneck?
-
----
-
-# 20 · `AI + MOBILE`
-
-One of my strongest interests is bringing AI closer to the user.
-
-```text
-                 AI PRODUCT
-                     │
-          ┌──────────┴──────────┐
-          ▼                     ▼
-      CLOUD AI             ON-DEVICE AI
-          │                     │
-      Powerful              Private
-      Flexible              Fast
-      Scalable              Offline
-          │                     │
-          └──────────┬──────────┘
-                     ▼
-                HYBRID SYSTEM
-```
-
----
-
-# 21 · `COREML LAB`
-
-### Model Deployment Pipeline
-
-```text
-PyTorch / TensorFlow
-        ↓
-Model Validation
-        ↓
-Optimization
-        ↓
-Conversion
-        ↓
-CoreML
-        ↓
-iOS Integration
-        ↓
-Benchmark
-        ↓
-Production
-```
-
-Goals:
-
-- lower latency
-- lower memory usage
-- better battery efficiency
-- privacy
-- offline inference
-
----
-
-# 22 · `COMPUTER VISION`
-
-Areas of interest:
-
-| AREA | APPLICATION |
-|---|---|
-| Classification | Image understanding |
-| Detection | Object localization |
-| Segmentation | Pixel-level understanding |
-| Restoration | Damaged image recovery |
-| Enhancement | Visual quality |
-| OCR | Text extraction |
-| Tracking | Object movement |
-| Transformation | Perspective / geometry |
-
----
-
-# 23 · `MACHINE LEARNING WORKBENCH`
-
-```text
-Dataset
-   │
-   ├── Clean
-   ├── Normalize
-   ├── Augment
-   └── Split
-        │
-        ▼
-     Training
-        │
-        ├── Baseline
-        ├── Experiment
-        ├── Tune
-        └── Validate
-        │
-        ▼
-     Evaluation
-        │
-        ├── Accuracy
-        ├── Precision
-        ├── Recall
-        ├── F1
-        └── Latency
-        │
-        ▼
-     Deployment
-```
-
----
-
-# 24 · `GENERATIVE AI`
-
-### Application Architecture
-
-```mermaid
-flowchart LR
-
-USER[User] --> UI[Application]
-UI --> ORCH[AI Orchestrator]
-
-ORCH --> MEMORY[Context / Memory]
-ORCH --> TOOLS[Tools]
-ORCH --> MODEL[LLM]
-ORCH --> GUARD[Safety / Validation]
-
-TOOLS --> DATA[External Data]
-MODEL --> STREAM[Streaming Response]
-
-STREAM --> UI
-
-style MODEL fill:#312e81,stroke:#a78bfa,color:#fff
-style ORCH fill:#020617,stroke:#67e8f9,color:#fff
-style GUARD fill:#020617,stroke:#f97316,color:#fff
-```
-
----
-
-# 25 · `OPEN SOURCE MINDSET`
-
-Open source isn't just publishing code.
-
-It is:
-
-```text
-Readable Code
-     +
-Useful Documentation
-     +
-Reproducible Setup
-     +
-Issues
-     +
-Discussions
-     +
-Community
-     =
-Healthy Project
-```
-
----
-
-# 26 · `GIT WORKFLOW`
-
-```text
-main
- │
- ├── feature/*
- │
- ├── fix/*
- │
- ├── refactor/*
- │
- └── experiment/*
-        │
-        ▼
-      PR
-        │
-        ▼
-   Review / CI
-        │
-        ▼
-     Merge
-        │
-        ▼
-      Release
-```
-
----
-
-# 27 · `CODE QUALITY`
-
-### I care about
-
-- readability
-- naming
-- separation of concerns
-- error handling
-- testability
-- documentation
-- predictable behavior
-- performance
-- maintainability
-
-### Rule
-
-> If future-me cannot understand it, present-me needs to refactor it.
-
----
-
-# 28 · `RESEARCH MODE`
-
-Research questions I like:
-
-```text
-Can AI run efficiently on-device?
-
-How can models become smaller without losing quality?
-
-How can computer vision solve real-world problems?
-
-How can mobile apps use AI without feeling slow?
-
-How should AI systems handle context?
-
-How can intelligent systems become simpler for users?
-```
-
----
-
-# 29 · `LEARNING ENGINE`
-
-```text
-           CURIOUS
-              │
-              ▼
-           QUESTION
-              │
-              ▼
-           RESEARCH
-              │
-              ▼
-           PROTOTYPE
-              │
-              ▼
-           FAILURE
-              │
-              ▼
-           LEARNING
-              │
-              ▼
-           IMPROVEMENT
-              │
-              ▼
-           PRODUCT
-              │
-              └──────────────► CURIOUS
-```
-
----
-
-# 30 · `CURRENTLY LEVELING UP`
+# 67 · `CYBERSECURITY & SECURITY ENGINEERING`
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/SwiftUI-ADVANCED-FF375F?style=for-the-badge&logo=swift&logoColor=white"/>
-<img src="https://img.shields.io/badge/CoreML-EXPLORING-ffffff?style=for-the-badge&logo=apple&logoColor=black"/>
-<img src="https://img.shields.io/badge/Deep%20Learning-RESEARCH-a78bfa?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/System%20Design-LEARNING-06b6d4?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Cloud-ENGINEERING-22c55e?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SECURITY-DEFENSE%20IN%20DEPTH-dc2626?style=for-the-badge&logo=owasp&logoColor=white"/>
+<img src="https://img.shields.io/badge/APPSEC-SECURE%20SDLC-f97316?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/BLUE%20TEAM-DETECTION%20%26%20RESPONSE-0ea5e9?style=for-the-badge"/>
 
 </div>
 
+Security is a lifecycle: threat-model, prevent, detect, respond, recover, and learn. The focus is authorized testing, defensive engineering, and responsible disclosure.
+
+### Security domains and tooling
+
+| Domain | Concepts / tools to learn and apply |
+|---|---|
+| Security foundations | CIA triad, threat modeling, attack surface, risk, least privilege, zero trust |
+| Application security | OWASP Top 10, ASVS, secure coding, output encoding, input validation |
+| API security | OAuth 2.0, OpenID Connect, JWT validation, scopes, object-level authorization, rate limits |
+| Identity and access | MFA, passkeys, RBAC, ABAC, IAM, PAM, session security, secrets rotation |
+| Network defense | firewalls, segmentation, VPN, IDS/IPS, DNS security, TLS, packet analysis |
+| Web testing | OWASP ZAP, Burp Suite Community, browser devtools, safe test environments |
+| Vulnerability management | CVE, CVSS, patch prioritization, dependency inventory, remediation verification |
+| Static and dynamic analysis | Semgrep, CodeQL, SAST, DAST, IAST concepts, fuzzing, secure code review |
+| Dependency / supply chain | SBOM, SCA, signed artifacts, provenance, lockfiles, pinned actions and images |
+| Endpoint / host defense | hardening, EDR concepts, audit logs, file integrity, patching, secure baselines |
+| Cloud security | IAM policies, private networking, KMS, secret managers, workload identity, posture management |
+| Containers and Kubernetes | image scanning, admission policies, RBAC, network policies, runtime restrictions |
+| Detection and response | SIEM concepts, alert triage, incident timelines, containment, eradication, recovery |
+| Digital forensics | evidence handling, chain of custody, disk and memory artifacts, log correlation |
+| Cryptography | hashing, MACs, digital signatures, key exchange, PKI, certificates, key lifecycle |
+| Governance | NIST CSF, NIST SSDF, ISO 27001 concepts, CIS Benchmarks, privacy and audit evidence |
+
+### Secure development lifecycle
+
+```mermaid
+flowchart LR
+    PLAN[Requirements and Threat Model] --> DESIGN[Secure Architecture]
+    DESIGN --> CODE[Secure Coding]
+    CODE --> CHECK[Secret Scan / SAST / SCA]
+    CHECK --> TEST[DAST / Fuzz / Security Tests]
+    TEST --> RELEASE[Signed and Reviewed Release]
+    RELEASE --> MONITOR[Logs / Alerts / Vulnerability Watch]
+    MONITOR --> FIX[Incident Response and Remediation]
+    FIX --> PLAN
+```
+
+### Security checklist
+
+- [ ] Threat model important assets, trust boundaries, abuse cases and likely failure modes.
+- [ ] Enforce authorization on the server for every sensitive operation and object.
+- [ ] Store secrets in a secret manager; never commit credentials, private keys or production tokens.
+- [ ] Validate input and encode output; use parameterized queries and safe deserialization.
+- [ ] Use modern TLS, secure cookie flags, CSRF defenses where applicable, and secure session rotation.
+- [ ] Add dependency, secret, container and infrastructure-as-code scanning to CI.
+- [ ] Apply least privilege, MFA, short-lived credentials, logging and tested recovery procedures.
+- [ ] Document scope and obtain written permission before security testing.
+
+**Ethical boundary:** security labs, owned systems, CTFs, and explicitly authorized assessments only. Avoid presenting unverified tool familiarity as professional penetration-testing experience.
+
 ---
 
-# 31 · `SKILL RADAR`
+# 68 · `CI/CD, JENKINS & GITLAB`
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=jenkins,gitlab,githubactions,docker,kubernetes,terraform,ansible&theme=dark&perline=7"/>
+
+</div>
+
+### CI/CD platform map
+
+| Platform / tool | Engineering use |
+|---|---|
+| Jenkins | Pipeline as Code, Jenkinsfile, agents, credentials, shared libraries, artifacts |
+| GitLab CI/CD | `.gitlab-ci.yml`, stages, runners, environments, artifacts, protected variables |
+| GitHub Actions | workflows, reusable workflows, runners, environments, release automation |
+| Git | branching, commits, tags, code review, release history |
+| Docker / BuildKit | repeatable builds, multi-stage images, image metadata, layer caching |
+| Kubernetes | deployment rollout, probes, resource limits, autoscaling, rollback |
+| Terraform / OpenTofu | infrastructure as code, plans, state, modules, policy checks |
+| Ansible | configuration management, idempotent automation, controlled rollout |
+| Argo CD / Flux | GitOps reconciliation and declarative deployment |
+| Helm / Kustomize | Kubernetes packaging and environment overlays |
+| SonarQube / Semgrep | code quality and static analysis |
+| Trivy / Grype | container and dependency vulnerability scanning |
+| Prometheus / Grafana | metrics, dashboards, alerting and release health |
+
+### Example production pipeline
+
+```mermaid
+flowchart TD
+    PUSH[Push / Merge Request] --> LINT[Lint and Format]
+    LINT --> TEST[Unit and Integration Tests]
+    TEST --> SEC[Secrets / SAST / Dependency Scan]
+    SEC --> BUILD[Build Immutable Artifact]
+    BUILD --> IMAGE[Build and Scan Container]
+    IMAGE --> STAGE[Deploy to Staging]
+    STAGE --> SMOKE[Smoke / Contract / E2E Tests]
+    SMOKE --> APPROVE{Production Approval?}
+    APPROVE -->|Yes| PROD[Canary or Rolling Release]
+    APPROVE -->|No| HOLD[Hold and Investigate]
+    PROD --> OBS[Health Checks and Observability]
+    OBS -->|Healthy| DONE[Promote Release]
+    OBS -->|Unhealthy| ROLLBACK[Rollback / Disable Feature]
+```
+
+### Jenkins — core concepts
+
+- Declarative and scripted pipelines; `Jenkinsfile`; stages, steps, post actions
+- Agents, labels, executors, ephemeral build workers and isolated build environments
+- Credentials binding, folder permissions, RBAC, secret masking and least privilege
+- Shared libraries, artifact retention, test reports and pipeline reuse
+- Webhook triggers, branch conditions, approvals, deployment gates and rollback paths
+- Plugin governance, controller/agent separation, backup, upgrades and audit logs
+
+### GitLab CI/CD — core concepts
+
+- Stages and jobs, `needs`, `rules`, `workflow`, includes and reusable templates
+- Shared, group and project runners; protected branches, tags and environments
+- Cache versus artifacts, artifact expiry, job dependencies and test reports
+- Merge-request pipelines, code owners, approval rules and protected variables
+- Container registry, environment promotion, deployment approvals and rollback
+- OIDC/federated cloud credentials where supported, avoiding long-lived cloud keys
+
+### Release engineering principles
+
+1. Build once and promote the same immutable artifact between environments.
+2. Keep development, staging and production configuration separate.
+3. Use short-lived credentials, protected deployment environments and auditable approvals.
+4. Test database migrations and define backward-compatible rollout/rollback plans.
+5. Use canary, blue-green or rolling deployments according to system risk.
+6. Track DORA-style delivery metrics: deployment frequency, lead time, change failure rate and recovery time.
+7. Keep a documented rollback path and verify it through drills.
+
+---
+
+# 69 · `NETWORKING & INTERNET ENGINEERING`
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/NETWORKING-TCP%2FIP%20%7C%20ROUTING-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/NETWORK%20SECURITY-DNS%20%7C%20TLS%20%7C%20VPN-0891b2?style=for-the-badge"/>
+
+</div>
+
+### Networking knowledge map
+
+| Layer / area | Topics and technologies |
+|---|---|
+| Fundamentals | OSI and TCP/IP models, encapsulation, MTU, latency, jitter, packet loss |
+| Link layer | Ethernet, MAC, ARP, VLANs, STP, Wi-Fi, switching |
+| IP layer | IPv4, IPv6, CIDR, subnetting, ICMP, NAT, routing tables |
+| Routing | static routing, OSPF, BGP concepts, route selection, ECMP |
+| Transport | TCP handshake, congestion control, UDP, QUIC, ports, sockets |
+| Application | HTTP/1.1, HTTP/2, HTTP/3, DNS, DHCP, SMTP, SSH, NTP |
+| Security | TLS, PKI, firewalls, VPNs, IPsec, WireGuard, segmentation, ACLs |
+| Load distribution | reverse proxies, L4/L7 load balancers, health checks, CDN, anycast |
+| Troubleshooting | `ping`, `traceroute`, `dig`, `nslookup`, `curl`, `ss`, `tcpdump`, Wireshark |
+| Enterprise / provider | subnet planning, high availability, redundant links, BGP policy, QoS concepts |
+| Cloud networking | VPC/VNet, subnets, route tables, NAT gateways, private endpoints, peering |
+| Service networking | service discovery, ingress, egress controls, service mesh and mTLS concepts |
+
+### Request path
+
+```text
+Browser / Mobile App
+  → DNS Resolution
+  → TCP or QUIC Connection
+  → TLS Handshake
+  → CDN / Edge
+  → WAF / Load Balancer
+  → API Gateway / Reverse Proxy
+  → Application Service
+  → Database / Cache / Queue
+  → Response
+```
+
+### Practical networking labs
+
+- Design IPv4/IPv6 subnets and document address allocation and routing.
+- Capture traffic in Wireshark and explain DNS lookup, TCP setup and TLS negotiation.
+- Configure a private lab with VLANs, firewall rules and a VPN.
+- Deploy a reverse proxy with TLS, health checks and rate limiting.
+- Diagnose DNS, MTU, packet loss, asymmetric routing and certificate failures.
+- Document network diagrams, ports, trust zones, ingress/egress and recovery paths.
+
+---
+
+# 70 · `COMPUTER SCIENCE CORE`
+
+The strongest engineering profiles connect implementation to the underlying concepts. This is the broader CS map behind the tools.
+
+| Field | Core topics |
+|---|---|
+| Mathematics | discrete math, logic, sets, combinatorics, probability, statistics, linear algebra, calculus |
+| Algorithms | sorting, searching, recursion, greedy methods, dynamic programming, graph algorithms |
+| Data structures | arrays, linked lists, stacks, queues, trees, heaps, hash tables, tries, graphs |
+| Complexity | Big-O, time/space trade-offs, amortized analysis, lower bounds |
+| Programming languages | paradigms, type systems, generics, memory models, interpreters, language tooling |
+| Compilers | lexing, parsing, ASTs, semantic analysis, IR, optimization, code generation |
+| Operating systems | processes, threads, scheduling, virtual memory, filesystems, synchronization |
+| Computer architecture | ISA, registers, caches, pipelines, branch prediction, SIMD, interrupts |
+| Databases | relational algebra, normalization, transactions, ACID, isolation, indexing, query plans |
+| Distributed systems | replication, partitioning, consensus concepts, idempotency, consistency, fault tolerance |
+| Networking | protocols, routing, congestion control, sockets, distributed communication |
+| Software engineering | requirements, modularity, design patterns, testing, code review, refactoring |
+| Formal methods | invariants, state machines, contracts, model checking concepts, property-based testing |
+| Human-computer interaction | usability, accessibility, interaction design, cognitive load |
+| Information security | cryptography, secure design, identity, threat modeling, risk management |
+| Data engineering | ETL/ELT, batch/stream processing, data quality, lineage, governance |
+| AI / ML | optimization, generalization, evaluation, neural networks, model deployment and monitoring |
+
+### Algorithms and problem-solving workflow
+
+```text
+Understand Constraints
+  → Define Correctness
+  → Choose Data Structure
+  → Analyze Time and Space
+  → Implement
+  → Test Edge Cases
+  → Benchmark
+  → Explain Trade-offs
+```
+
+---
+
+# 71 · `CLOUD, PLATFORM & INFRASTRUCTURE ENGINEERING`
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=aws,azure,gcp,linux,docker,kubernetes,terraform,ansible,prometheus,grafana&theme=dark&perline=5"/>
+
+</div>
+
+### Infrastructure domains
+
+- **Cloud:** compute, object/block/file storage, managed databases, IAM, VPC/VNet, KMS and cost controls
+- **Linux administration:** users/groups, permissions, systemd, logs, filesystems, package management, performance
+- **Containers:** namespaces, cgroups, image layers, registries, non-root execution and image hardening
+- **Kubernetes:** Pods, Deployments, Services, Ingress, ConfigMaps, Secrets, probes, quotas, RBAC and NetworkPolicy
+- **Infrastructure as Code:** Terraform/OpenTofu, modules, state protection, drift detection and policy checks
+- **Configuration management:** Ansible, idempotency, inventories, secrets and controlled changes
+- **Storage:** object storage, block storage, replication, backups, retention, encryption and restore testing
+- **Reliability:** redundancy, health checks, graceful degradation, capacity planning and disaster recovery
+- **FinOps:** tagging, budgets, utilization, rightsizing, cost allocation and unit economics
+
+### Reliability engineering
+
+- Define service-level indicators (SLIs), objectives (SLOs) and error budgets.
+- Set meaningful latency, availability and correctness targets based on user needs.
+- Use runbooks, on-call escalation, incident reviews and blameless postmortems.
+- Test backups by restoring them; a successful backup job is not proof of recoverability.
+- Practice failure scenarios, dependency outages, region loss and capacity exhaustion.
+
+---
+
+# 72 · `TESTING, QUALITY & RELEASE CONFIDENCE`
+
+| Test layer | Purpose / examples |
+|---|---|
+| Unit | fast checks for functions, classes and business rules |
+| Integration | verify database, queue, filesystem and service interactions |
+| Contract | ensure API producers and consumers agree on schemas and behavior |
+| End-to-end | validate user journeys across the real application boundaries |
+| Performance | load, stress, soak, spike and capacity testing |
+| Security | SAST, DAST, SCA, secret scanning, fuzzing and threat-model verification |
+| Reliability | chaos experiments in controlled environments, failover and recovery drills |
+| Accessibility | keyboard navigation, screen readers, contrast and semantic structure |
+| Compatibility | OS/browser/device matrices, API version compatibility and migrations |
+| Data / ML | data validation, drift checks, model quality, fairness and reproducibility |
+
+### Quality gates
+
+- Reproducible builds and deterministic test setup where practical
+- Linting, formatting, type checking and meaningful code review
+- Tests for boundary conditions, permissions, timeouts and partial failure
+- Coverage interpreted alongside test quality, not used as the only quality metric
+- Release notes, migration plan, feature flags and rollback instructions
+- Post-release checks against real health metrics and error budgets
+
+---
+
+# 73 · `DATA ENGINEERING & ANALYTICS`
+
+- **Data stores:** PostgreSQL, MySQL, MongoDB, Redis, object storage and search indexes
+- **Pipelines:** SQL, Python, ETL/ELT, scheduled jobs, event-driven workflows and data validation
+- **Streaming / distributed data:** Kafka concepts, partitioning, consumer groups, delivery semantics
+- **Analytics:** event schemas, funnels, cohorts, retention, experimentation and metric definitions
+- **Governance:** lineage, cataloging, access control, retention, deletion and privacy-aware design
+- **Reliability:** schema evolution, idempotent ingestion, replay, deduplication and dead-letter queues
+- **ML data operations:** dataset versioning, feature quality, leakage prevention and reproducible experiments
+
+---
+
+# 74 · `ENGINEERING MATURITY MODEL`
+
+A technology inventory is a map, not proof of mastery. I aim to demonstrate skills with working code, tests, architecture decisions and measurable outcomes.
+
+| Level | Evidence |
+|---|---|
+| Foundation | Explain the concept and solve small exercises |
+| Applied | Build a working feature with tests and documentation |
+| Production-minded | Handle security, failure modes, observability and deployment |
+| Advanced | Explain trade-offs, benchmark alternatives and design for constraints |
+| Leadership | Set standards, review designs, mentor others and improve delivery outcomes |
+
+### Evidence-first portfolio checklist
+
+- [ ] Publish an OS / systems lab with a clear scope, emulator instructions and tests.
+- [ ] Publish a secure API with a threat model, authorization tests and security scan results.
+- [ ] Publish a Jenkins or GitLab pipeline with test, scan, staging deploy and rollback steps.
+- [ ] Publish a network lab with diagrams, packet captures and troubleshooting notes.
+- [ ] Publish a cloud deployment with IaC, monitoring, backup and recovery documentation.
+- [ ] Write short architecture decision records (ADRs) explaining constraints and trade-offs.
+- [ ] Link every claimed project to a repository, demo, technical write-up or measurable result.
+
+---
+
+'''
+
+readme = readme[:insert_at] + extra + readme[insert_at:]
+
+# Renumber the original final section so headings remain unique.
+readme = readme.replace("# 66 · `FINAL MESSAGE`", "# 75 · `FINAL MESSAGE`")
+
+# Replace unsupported-looking numeric self-ratings with an evidence-oriented section.
+old = """# 31 · `SKILL RADAR`
 
 ```text
 AI / ML              ████████████████████░  92%
@@ -1075,877 +420,33 @@ Backend              ████████████████░░░�
 Computer Vision      ████████████████░░░░░  78%
 System Design        ██████████████░░░░░░░  70%
 DevOps               █████████████░░░░░░░░  66%
-```
+```"""
+new = """# 31 · `SKILL RADAR`
 
----
-
-# 32 · `TOOLBOX`
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,xcode,vscode,figma,postman,notion&theme=dark&perline=9"/>
-
-</div>
-
----
-
-# 33 · `ARCHITECTURE PRINCIPLES`
+> I prefer evidence over invented percentages. The topics below are engineering areas I work on, study, or build projects around; depth varies by technology.
 
 ```text
-01  Keep boundaries clear.
-02  Make dependencies explicit.
-03  Prefer boring infrastructure when possible.
-04  Measure before optimizing.
-05  Design failure states.
-06  Treat security as a feature.
-07  Keep AI observable.
-08  Make systems replaceable.
-09  Automate repetitive work.
-10  Build for the next engineer too.
-```
-
----
-
-# 34 · `PRODUCT DEVELOPMENT LOOP`
-
-```mermaid
-flowchart LR
-
-IDEA --> RESEARCH
-RESEARCH --> DESIGN
-DESIGN --> PROTOTYPE
-PROTOTYPE --> BUILD
-BUILD --> TEST
-TEST --> SHIP
-SHIP --> MEASURE
-MEASURE --> LEARN
-LEARN --> IDEA
-
-style IDEA fill:#020617,stroke:#67e8f9,color:#fff
-style BUILD fill:#020617,stroke:#a78bfa,color:#fff
-style SHIP fill:#020617,stroke:#22c55e,color:#fff
-style LEARN fill:#020617,stroke:#f97316,color:#fff
-```
-
----
-
-# 35 · `PROJECT BLUEPRINT`
-
-Every serious project starts with:
-
-```text
-┌──────────────────────────────────────────┐
-│               PROJECT                    │
-├──────────────────────────────────────────┤
-│ Problem                                  │
-│ User                                     │
-│ Value Proposition                        │
-│ Architecture                             │
-│ Technology                               │
-│ Data                                     │
-│ Security                                 │
-│ AI / Automation                          │
-│ UX                                       │
-│ Testing                                  │
-│ Deployment                               │
-│ Monitoring                               │
-│ Scale                                    │
-└──────────────────────────────────────────┘
-```
-
----
-
-# 36 · `FLAGSHIP PROJECT CARDS`
-
-## 🚀 Orbix Ecosystem
-
-An ambitious technology ecosystem exploring:
-
-- intelligent software
-- browser experiences
-- secure operating environments
-- AI-assisted workflows
-- developer tooling
-- scalable infrastructure
-
----
-
-## 🌌 SkyAI
-
-A concept around AI-powered travel and intelligent trip experiences.
-
-Potential layers:
-
-```text
-Travel Search
-     ↓
-Recommendation Engine
-     ↓
-AI Assistant
-     ↓
-Itinerary
-     ↓
-Booking
-     ↓
-Payments
-     ↓
-Post-Trip Intelligence
-```
-
----
-
-## 💬 AI Assistant Platforms
-
-Focus:
-
-- conversational UI
-- context
-- tool calling
-- memory
-- personalization
-- multimodal interaction
-- streaming
-- intelligent workflows
-
----
-
-## 🛰️ Satellite AI
-
-Research direction:
-
-```text
-Remote Sensing
-     +
-Computer Vision
-     +
-Generative Models
-     =
-Intelligent Earth Observation
-```
-
----
-
-# 37 · `APP ARCHITECTURE PATTERN`
-
-```text
-┌──────────────────────────────┐
-│            UI                │
-├──────────────────────────────┤
-│         View Model           │
-├──────────────────────────────┤
-│          Domain              │
-├──────────────────────────────┤
-│           Data               │
-├──────────────────────────────┤
-│       Infrastructure         │
-└──────────────────────────────┘
-```
-
-Benefits:
-
-- easier testing
-- cleaner features
-- replaceable APIs
-- maintainable code
-- scalable teams
-
----
-
-# 38 · `API ENGINEERING`
-
-### Request lifecycle
-
-```text
-HTTP Request
-    ↓
-Router
-    ↓
-Middleware
-    ↓
-Validation
-    ↓
-Controller
-    ↓
-Service
-    ↓
-Repository
-    ↓
-Database
-    ↓
-Serializer
-    ↓
-HTTP Response
-```
-
----
-
-# 39 · `OBSERVABILITY`
-
-A production system should answer:
-
-```text
-What happened?
-When did it happen?
-Where did it happen?
-Why did it happen?
-How many users were affected?
-How long did it take?
-Did it recover?
-```
-
-Observability:
-
-- logs
-- metrics
-- traces
-- alerts
-- dashboards
-
----
-
-# 40 · `SCALABILITY`
-
-```text
-1 USER
-   ↓
-10 USERS
-   ↓
-1K USERS
-   ↓
-100K USERS
-   ↓
-1M USERS
-```
-
-The architecture must evolve.
-
-### Scale levers
-
-- caching
-- queues
-- horizontal scaling
-- database indexes
-- read replicas
-- asynchronous processing
-- CDN
-- model optimization
-- load balancing
-
----
-
-# 41 · `AI SCALABILITY`
-
-```text
-MODEL
- ↓
-OPTIMIZATION
- ↓
-BATCHING
- ↓
-CACHING
- ↓
-QUEUE
- ↓
-WORKERS
- ↓
-GPU POOL
- ↓
-AUTOSCALING
-```
-
----
-
-# 42 · `MOBILE PERFORMANCE`
-
-### Performance targets
-
-```text
-Fast launch
-     ↓
-Smooth navigation
-     ↓
-Efficient rendering
-     ↓
-Minimal network waits
-     ↓
-Smart caching
-     ↓
-Efficient AI inference
-     ↓
-Battery awareness
-```
-
----
-
-# 43 · `DESIGN SYSTEM`
-
-### UI tokens
-
-```text
-COLOR
-├── Background
-├── Surface
-├── Primary
-├── Accent
-└── Danger
-
-TYPE
-├── Display
-├── Heading
-├── Body
-└── Caption
-
-MOTION
-├── Enter
-├── Exit
-├── Transition
-└── Feedback
-
-SPACING
-├── XS
-├── SM
-├── MD
-├── LG
-└── XL
-```
-
----
-
-# 44 · `ANIMATION LAB`
-
-Animations I like:
-
-- spring transitions
-- staggered entrance
-- shared-element motion
-- scroll-based motion
-- particle effects
-- subtle parallax
-- loading skeletons
-- state transitions
-- micro-interactions
-
-Rule:
-
-> **Motion should explain what changed.**
-
----
-
-# 45 · `GITHUB TELEMETRY`
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=avinash9354&bg_color=020617&color=67e8f9&line=6366f1&point=f97316&area=true&hide_border=true&custom_title=AVINASH%20ENGINEERING%20TELEMETRY" width="100%"/>
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=avinash9354&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%"/>
-
-</div>
-
----
-
-# 46 · `CONTRIBUTION ENGINE`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/avinash9354/avinash9354/output/github-snake-dark.svg" width="100%" alt="GitHub contribution snake"/>
-
-</div>
-
----
-
-# 47 · `LANGUAGE TELEMETRY`
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=avinash9354&layout=donut-vertical&hide_border=true&bg_color=020617&title_color=67e8f9&text_color=e2e8f0&langs_count=10"/>
-
-</div>
-
----
-
-# 48 · `CODING PHILOSOPHY`
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│  CODE SHOULD BE                                               │
-│                                                              │
-│       SIMPLE                                                  │
-│         ↓                                                    │
-│       READABLE                                                │
-│         ↓                                                    │
-│       TESTABLE                                                │
-│         ↓                                                    │
-│       OBSERVABLE                                              │
-│         ↓                                                    │
-│       SCALABLE                                                │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
-
----
-
-# 49 · `FAILURE PHILOSOPHY`
-
-Failure isn't the opposite of progress.
-
-```text
-TRY
- ↓
-FAIL
- ↓
-OBSERVE
- ↓
-UNDERSTAND
- ↓
-CHANGE
- ↓
-TRY AGAIN
-```
-
-Every failed prototype is information.
-
----
-
-# 50 · `LEARNING STACK`
-
-```text
-FOUNDATION
-├── Mathematics
-├── Algorithms
-├── Data Structures
-└── Computer Science
-
-ENGINEERING
-├── Architecture
-├── APIs
-├── Databases
-├── Networking
-└── Security
-
-INTELLIGENCE
-├── Machine Learning
-├── Deep Learning
-├── Computer Vision
-├── Generative AI
-└── Model Deployment
-
-PRODUCT
-├── UX
-├── Design
-├── Analytics
-├── Growth
-└── Business
-```
-
----
-
-# 51 · `ROADMAP`
-
-## Phase I — Foundation
-
-- strengthen CS fundamentals
-- algorithms
-- system design
-- software architecture
-- advanced programming
-
-## Phase II — AI
-
-- deep learning
-- computer vision
-- generative AI
-- model deployment
-- on-device inference
-
-## Phase III — Product
-
-- intelligent mobile apps
-- AI assistants
-- computer vision products
-- scalable backend systems
-
-## Phase IV — Infrastructure
-
-- distributed systems
-- cloud architecture
-- GPU infrastructure
-- observability
-- high-scale systems
-
-## Phase V — Innovation
-
-- original research
-- open-source projects
-- new product ideas
-- large-scale AI systems
-
----
-
-# 52 · `2026 → FUTURE`
-
-```text
-2026
- │
- ├── AI Applications
- ├── Advanced iOS
- ├── Flutter
- ├── ML Systems
- └── Product Engineering
-       │
-       ▼
-2027
- │
- ├── Advanced AI
- ├── System Design
- ├── Cloud
- ├── Research
- └── Large-scale products
-       │
-       ▼
-2030+
- │
- └── Build technology that changes industries.
-```
-
----
-
-# 53 · `WHAT I'M BUILDING TOWARD`
-
-### 🎯 Long-Term Vision
-
-```text
-AI
- +
-SOFTWARE ENGINEERING
- +
-PRODUCT DESIGN
- +
-SYSTEM ARCHITECTURE
- +
-RESEARCH
- =
-TECHNOLOGY PRODUCTS
-```
-
-The destination isn't a specific programming language.
-
-The destination is:
-
-> **Being able to take a difficult problem and build the entire solution.**
-
----
-
-# 54 · `ENGINEERING CHECKLIST`
-
-Before shipping:
-
-```text
-[ ] Does the feature solve the actual problem?
-[ ] Is the UX understandable?
-[ ] Are loading states handled?
-[ ] Are errors handled?
-[ ] Is the data secure?
-[ ] Is the API reliable?
-[ ] Is the database indexed?
-[ ] Is performance acceptable?
-[ ] Is the system observable?
-[ ] Can another engineer maintain it?
-[ ] Can it scale?
-[ ] Can it be tested?
-```
-
----
-
-# 55 · `AI PRODUCT CHECKLIST`
-
-```text
-[ ] Model quality
-[ ] Latency
-[ ] Cost
-[ ] Privacy
-[ ] Hallucination handling
-[ ] Context management
-[ ] Prompt robustness
-[ ] Evaluation
-[ ] Monitoring
-[ ] Fallback behavior
-[ ] User feedback
-[ ] Continuous improvement
-```
-
----
-
-# 56 · `WHY I BUILD`
-
-I like the moment when:
-
-```text
-       IDEA
-        │
-        ▼
-     NOTHING
-        │
-        ▼
-      CODE
-        │
-        ▼
-    PROTOTYPE
-        │
-        ▼
-     PRODUCT
-        │
-        ▼
-      USERS
-        │
-        ▼
-      IMPACT
-```
-
-That transformation is what keeps me building.
-
----
-
-# 57 · `BEYOND CODE`
-
-Technology is not only about writing code.
-
-It is also about:
-
-- asking better questions
-- understanding users
-- designing systems
-- communicating ideas
-- making trade-offs
-- learning from failure
-- thinking long-term
-
----
-
-# 58 · `COLLABORATION`
-
-I enjoy collaborating around:
-
-```text
-AI
-├── Applied ML
-├── Generative AI
-└── Computer Vision
-
-Mobile
-├── iOS
-└── Flutter
-
-Engineering
-├── Backend
-├── Cloud
-└── Architecture
-
-Products
-├── Startups
-├── Experiments
-└── Open Source
-```
-
----
-
-# 59 · `OPEN SOURCE MISSION`
-
-```text
-BUILD
- ↓
-DOCUMENT
- ↓
-SHARE
- ↓
-GET FEEDBACK
- ↓
-IMPROVE
- ↓
-HELP OTHERS
- ↓
-BUILD AGAIN
-```
-
----
-
-# 60 · `PROFILE COMMAND CENTER`
-
-<div align="center">
-
-| COMMAND | PURPOSE |
-|---|---|
-| 🧠 AI | Artificial Intelligence |
-| 📱 MOBILE | iOS + Flutter |
-| 🌐 WEB | Full Stack |
-| ⚙️ SYSTEMS | Architecture |
-| 🔬 LAB | Research |
-| 🚀 PRODUCTS | Product Engineering |
-| ☁️ CLOUD | Infrastructure |
-| 🛠️ TOOLS | Developer Workflow |
-
-</div>
-
----
-
-# 61 · `CURRENT PROJECT RADAR`
-
-```text
-                         ┌───────────────┐
-                         │   AI APPS     │
-                         └───────┬───────┘
-                                 │
-             ┌───────────────────┼──────────────────┐
-             ▼                   ▼                  ▼
-       ┌───────────┐       ┌───────────┐      ┌───────────┐
-       │   iOS     │       │   FLUTTER │      │   WEB     │
-       └─────┬─────┘       └─────┬─────┘      └─────┬─────┘
-             │                   │                  │
-             └───────────────────┼──────────────────┘
-                                 ▼
-                         ┌───────────────┐
-                         │   AI CORE     │
-                         └───────────────┘
-```
-
----
-
-# 62 · `ENGINEERING VALUES`
-
-### Curiosity
-
-Never stop asking why.
-
-### Ownership
-
-If I build it, I understand it.
-
-### Simplicity
-
-Complex systems should feel simple to users.
-
-### Reliability
-
-A feature isn't finished until failure is considered.
-
-### Growth
-
-Every project should teach something.
-
-### Impact
-
-Technology matters when people can use it.
-
----
-
-# 63 · `TERMINAL`
-
-```bash
-$ whoami
-avinash-pandey
-
-$ focus
-AI + Software Engineering
-
-$ stack
-Swift Python Dart TypeScript Java React Node Flutter PyTorch
-
-$ mission
-Build intelligent products.
-
-$ status
-██████████████████████████████████████ ONLINE
-
-$ next
-Create something impossible.
-```
-
----
-
-# 64 · `SIGNAL`
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/AI-ONLINE-67e8f9?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/BUILD-ONLINE-22c55e?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/RESEARCH-ACTIVE-a78bfa?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/IDEAS-INFINITE-f97316?style=for-the-badge&labelColor=020617"/>
-
-</div>
-
----
-
-# 65 · `CONNECT`
-
-<div align="center">
-
-<a href="https://github.com/avinash9354">
-<img src="https://img.shields.io/badge/GitHub-020617?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/avinashpandeyai/">
-<img src="https://img.shields.io/badge/LinkedIn-020617?style=for-the-badge&logo=linkedin&logoColor=38bdf8"/>
-</a>
-
-<a href="https://www.instagram.com/mr.avi_pandey/">
-<img src="https://img.shields.io/badge/Instagram-020617?style=for-the-badge&logo=instagram&logoColor=f472b6"/>
-</a>
-
-<a href="mailto:avinash9354@email.com">
-<img src="https://img.shields.io/badge/Email-020617?style=for-the-badge&logo=gmail&logoColor=f87171"/>
-</a>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/LET'S%20BUILD-SOMETHING%20EXTRAORDINARY-06b6d4?style=for-the-badge"/>
-
-</div>
-
----
-
-# 66 · `FINAL MESSAGE`
-
-<div align="center">
-
-```text
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║                    KEEP BUILDING.                            ║
-║                                                              ║
-║             KEEP LEARNING.                                   ║
-║                                                              ║
-║             KEEP QUESTIONING.                                ║
-║                                                              ║
-║             KEEP CREATING.                                   ║
-║                                                              ║
-║       The future belongs to people who build it.             ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
-<br/>
-
-### ⚡ AI · MOBILE · SOFTWARE · SYSTEMS · INNOVATION
-
-**Built with curiosity. Engineered with purpose.**
-
-</div>
-
----
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&section=footer&color=0:020617,25:164e63,50:312e81,75:0f172a,100:020617&animation=twinkling"/>
-
-</div>
-'''
-
-path = Path("/mnt/data/README.md")
-path.write_text(readme, encoding="utf-8")
-
-print(f"Created {path}")
-print(f"Characters: {len(readme):,}")
+AI / ML · Mobile Engineering · Full Stack · Backend
+System Design · OS Development · Cybersecurity · Networking
+CI/CD · Cloud Infrastructure · Distributed Systems · Data Engineering
+
+Progress is demonstrated through:
+  → public repositories and working demos
+  → tests, benchmarks and reproducible builds
+  → architecture decision records
+  → deployment, monitoring and incident learnings
+```"""
+readme = readme.replace(old, new)
+
+# Keep the visual theme, but make the profile more honest and technically credible.
+readme = readme.replace(
+    "AI ENGINEER%20%7C%20MOBILE%20ARCHITECT%20%7C%20FULL%20STACK%20BUILDER",
+    "SOFTWARE%20ENGINEERING%20%7C%20AI%20%7C%20SYSTEMS%20%7C%20SECURITY"
+)
+
+output = Path("/mnt/data/README_Engineering_Edition.md")
+output.write_text(readme + "\n", encoding="utf-8")
+print(f"Created: {output}")
+print(f"Size: {output.stat().st_size:,} bytes")
 print(f"Lines: {len(readme.splitlines()):,}")
-print(f"Sections: {sum(1 for line in readme.splitlines() if line.startswith('# '))}")
+print("Added OS development, cybersecurity, Jenkins/GitLab CI/CD, networking, CS fundamentals, cloud/platform, testing, data engineering, and evidence-based skill presentation.")
